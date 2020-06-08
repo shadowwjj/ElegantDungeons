@@ -2,5 +2,15 @@
   "item.elegantdungeons.key_diamond": "Diamond Key",
   "item.elegantdungeons.key_iron": "Iron Key",
   "item.elegantdungeons.key_gold": "Gold Key",
+  "item.elegantdungeons.key_t1_boss": "Tier 1 Boss Key",
+  "item.elegantdungeons.key_t2_boss": "Tier 2 Boss Key",
+  "item.elegantdungeons.key_t3_boss": "Tier 3 Boss Key",
+  "item.elegantdungeons.key_t4_boss": "Tier 4 Boss Key",
+  "item.elegantdungeons.key_t5_boss": "Tier 5 Boss Key",
+  "item.elegantdungeons.t1_crystal_shard": "Tier 1 Crystal Shard",
+  "item.elegantdungeons.t2_crystal_shard": "Tier 2 Crystal Shard",
+  "item.elegantdungeons.t3_crystal_shard": "Tier 3 Crystal Shard",
+  "item.elegantdungeons.t4_crystal_shard": "Tier 4 Crystal Shard",
+  "item.elegantdungeons.t5_crystal_shard": "Tier 5 Crystal Shard",
   "itemGroup.elegantDungeonsTab": "Elegant Dungeons"
 }
