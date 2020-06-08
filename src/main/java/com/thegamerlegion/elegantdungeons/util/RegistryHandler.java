@@ -1,6 +1,8 @@
 package com.thegamerlegion.elegantdungeons.util;
 
 import com.thegamerlegion.elegantdungeons.ElegantDungeons;
+import com.thegamerlegion.elegantdungeons.blocks.BlockItemBase;
+import com.thegamerlegion.elegantdungeons.blocks.T1Brick;
 import com.thegamerlegion.elegantdungeons.items.ItemBase;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -35,6 +37,7 @@ public class RegistryHandler {
     public static final RegistryObject<Item> T5_CRYSTAL_SHARD = ITEMS.register("t5_crystal_shard", ItemBase::new);
 
     // Blocks
-
+    public static final RegistryObject<Block> T1_BRICK = BLOCKS.register("lacumite_brick", T1Brick::new);
     // Block Items
+    public static final RegistryObject<Item> T1_BRICK_ITEM = ITEMS.register("lacumite_brick", () -> new BlockItemBase(T1_BRICK.get()));
 }
