@@ -20,7 +20,9 @@ public class RegistryHandler {
     }
 
     // Items
-    public static final RegistryObject<Item> DIAMOND_KEY = ITEMS.register("diamond_key", ItemBase::new);
+    public static final RegistryObject<Item> KEY_DIAMOND = ITEMS.register("key_diamond", ItemBase::new);
+    public static final RegistryObject<Item> KEY_IRON = ITEMS.register("key_iron", ItemBase::new);
+    public static final RegistryObject<Item> KEY_GOLD = ITEMS.register("key_gold", ItemBase::new);
 
     // Blocks
 

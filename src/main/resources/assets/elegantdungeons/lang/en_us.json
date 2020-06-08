@@ -1,4 +1,6 @@
 {
-  "item.elegantdungeons.diamond_key": "Diamond Key",
+  "item.elegantdungeons.key_diamond": "Diamond Key",
+  "item.elegantdungeons.key_iron": "Iron Key",
+  "item.elegantdungeons.key_gold": "Gold Key",
   "itemGroup.elegantDungeonsTab": "Elegant Dungeons"
 }

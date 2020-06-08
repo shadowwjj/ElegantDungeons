@@ -41,7 +41,7 @@ public class ElegantDungeons {
     public static final ItemGroup TAB = new ItemGroup("elegantDungeonsTab") {
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(RegistryHandler.DIAMOND_KEY.get());
+            return new ItemStack(RegistryHandler.KEY_DIAMOND.get());
         }
     };
 }
