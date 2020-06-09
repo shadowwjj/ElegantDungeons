@@ -3,6 +3,7 @@ package com.thegamerlegion.elegantdungeons.util;
 import com.thegamerlegion.elegantdungeons.ElegantDungeons;
 import com.thegamerlegion.elegantdungeons.blocks.BlockItemBase;
 import com.thegamerlegion.elegantdungeons.blocks.DungeonBrick;
+import com.thegamerlegion.elegantdungeons.items.BaubleItem;
 import com.thegamerlegion.elegantdungeons.items.ItemBase;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -35,6 +36,9 @@ public class RegistryHandler {
     public static final RegistryObject<Item> T3_CRYSTAL_SHARD = ITEMS.register("t3_crystal_shard", ItemBase::new);
     public static final RegistryObject<Item> T4_CRYSTAL_SHARD = ITEMS.register("t4_crystal_shard", ItemBase::new);
     public static final RegistryObject<Item> T5_CRYSTAL_SHARD = ITEMS.register("t5_crystal_shard", ItemBase::new);
+
+    // Baubles
+    public static final RegistryObject<Item> RING_BASE = ITEMS.register("ring_base", BaubleItem::new);
 
     // Blocks
     public static final RegistryObject<Block> T1_BRICK = BLOCKS.register("lacumite_brick", DungeonBrick::new);
