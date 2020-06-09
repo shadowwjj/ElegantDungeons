@@ -6,8 +6,12 @@ import com.thegamerlegion.elegantdungeons.blocks.DungeonBrick;
 import com.thegamerlegion.elegantdungeons.blocks.DungeonCrystal;
 import com.thegamerlegion.elegantdungeons.items.BaubleItem;
 import com.thegamerlegion.elegantdungeons.items.ItemBase;
+import com.thegamerlegion.elegantdungeons.items.tools.BrickBreaker;
+import com.thegamerlegion.elegantdungeons.items.tools.DungItemTiers;
 import net.minecraft.block.Block;
+import net.minecraft.item.IItemTier;
 import net.minecraft.item.Item;
+import net.minecraft.item.SwordItem;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -40,6 +44,11 @@ public class RegistryHandler {
 
     // Baubles
     public static final RegistryObject<Item> RING_BASE = ITEMS.register("ring_base", BaubleItem::new);
+
+    // Tools
+    public static final RegistryObject<Item> BRICK_BREAKER = ITEMS.register("brick_breaker", () -> {
+        return new BrickBreaker(DungItemTiers.BRICK_BREAKER, 6.0F, new Item.Properties().group(ElegantDungeons.TAB));
+    });
 
     // Blocks
     public static final RegistryObject<Block> T1_BRICK = BLOCKS.register("lacumite_brick", DungeonBrick::new);
