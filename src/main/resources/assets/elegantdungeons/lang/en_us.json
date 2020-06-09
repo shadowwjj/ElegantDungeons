@@ -15,5 +15,18 @@
   "item.elegantdungeons.ring_base": "Base Ring",
   "block.elegantdungeons.lacumite_brick": "Lacumite Brick",
   "block.elegantdungeons.lacumite_brick_chiseled": "Lacumite Brick Chiseled",
+  "block.elegantdungeons.lacumite_crystal_block": "Lacumite Crystal Block",
+  "block.elegantdungeons.fossenium_brick": "Fossenium Brick",
+  "block.elegantdungeons.fossenium_brick_chiseled": "Fossenium Brick Chiseled",
+  "block.elegantdungeons.fossenium_crystal_block": "Fossenium Crystal Block",
+  "block.elegantdungeons.jamanite_brick": "Jamanite Brick",
+  "block.elegantdungeons.jamanite_brick_chiseled": "Jamanite Brick Chiseled",
+  "block.elegantdungeons.jamanite_crystal_block": "Jamanite Crystal Block",
+  "block.elegantdungeons.dieran_brick": "Dieran Brick",
+  "block.elegantdungeons.dieran_brick_chiseled": "Dieran Brick Chiseled",
+  "block.elegantdungeons.dieran_crystal_block": "Dieran Crystal Block",
+  "block.elegantdungeons.myrkurite_brick": "Myrkurite Brick",
+  "block.elegantdungeons.myrkurite_brick_chiseled": "Myrkurite Brick Chiseled",
+  "block.elegantdungeons.myrkurite_crystal_block": "Myrkurite Crystal Block",
   "itemGroup.elegantDungeonsTab": "Elegant Dungeons"
 }
