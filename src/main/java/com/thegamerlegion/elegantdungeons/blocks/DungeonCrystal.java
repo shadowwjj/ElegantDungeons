@@ -9,10 +9,11 @@ public class DungeonCrystal extends Block {
 
     public DungeonCrystal() {
         super(Block.Properties.create(Material.GLASS)
-                .hardnessAndResistance(1.0f,0.7f)
+                .hardnessAndResistance(5.0f,0.7f)
                 .sound(SoundType.GLASS)
                 .harvestLevel(2)
                 .harvestTool(ToolType.PICKAXE)
+                .lightValue(8)
         );
 
     }
