@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "elegantdungeons:block/jamanite_slab" },
+        "type=top": { "model": "elegantdungeons:block/jamanite_slab_top" },
+        "type=double": { "model": "elegantdungeons:block/jamanite_brick" }
+    }
+}

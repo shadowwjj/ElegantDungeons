@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "elegantdungeons:block/myrkurite_slab" },
+        "type=top": { "model": "elegantdungeons:block/myrkurite_slab_top" },
+        "type=double": { "model": "elegantdungeons:block/myrkurite_brick" }
+    }
+}

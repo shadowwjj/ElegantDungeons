@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "elegantdungeons:blocks/jamanite_brick",
+        "top": "elegantdungeons:blocks/jamanite_brick",
+        "side": "elegantdungeons:blocks/jamanite_brick"
+    }
+}

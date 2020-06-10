@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "elegantdungeons:block/dieran_slab" },
+        "type=top": { "model": "elegantdungeons:block/dieran_slab_top" },
+        "type=double": { "model": "elegantdungeons:block/dieran_brick" }
+    }
+}

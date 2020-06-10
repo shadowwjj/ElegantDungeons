@@ -1,0 +1,8 @@
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "elegantdungeons:blocks/dieran_brick",
+        "top": "elegantdungeons:blocks/dieran_brick",
+        "side": "elegantdungeons:blocks/dieran_brick"
+    }
+}

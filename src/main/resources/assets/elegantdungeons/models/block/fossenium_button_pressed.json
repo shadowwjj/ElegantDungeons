@@ -1,0 +1,6 @@
+{
+    "parent": "block/button_pressed",
+    "textures": {
+        "texture": "elegantdungeons:blocks/fossenium_crystal_block"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "powered=false": { "model": "elegantdungeons:block/jamanite_pressure_plate" },
+        "powered=true": { "model": "elegantdungeons:block/jamanite_pressure_plate_down" }
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "elegantdungeons:block/fossenium_slab" },
+        "type=top": { "model": "elegantdungeons:block/fossenium_slab_top" },
+        "type=double": { "model": "elegantdungeons:block/fossenium_brick" }
+    }
+}

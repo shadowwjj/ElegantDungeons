@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab_top",
+    "textures": {
+        "bottom": "elegantdungeons:blocks/fossenium_brick",
+        "top": "elegantdungeons:blocks/fossenium_brick",
+        "side": "elegantdungeons:blocks/fossenium_brick"
+    }
+}
