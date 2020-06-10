@@ -1,6 +1,6 @@
 {
     "parent": "block/button_pressed",
     "textures": {
-        "texture": "elegantdungeons:blocks/lacumite_brick"
+        "texture": "elegantdungeons:blocks/lacumite_crystal_block"
     }
 }

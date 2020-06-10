@@ -9,6 +9,8 @@ import com.thegamerlegion.elegantdungeons.items.tools.BrickBreaker;
 import com.thegamerlegion.elegantdungeons.items.tools.DungItemTiers;
 import net.minecraft.block.Block;
 import net.minecraft.block.PressurePlateBlock;
+import net.minecraft.block.SlabBlock;
+import net.minecraft.block.StairsBlock;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
@@ -97,7 +99,8 @@ public class RegistryHandler {
     public static final RegistryObject<Block> T5_BRICK = BLOCKS.register("myrkurite_brick", DungeonBrick::new);
     public static final RegistryObject<Block> T5_BRICK_CHISELED = BLOCKS.register("myrkurite_brick_chiseled", DungeonBrick::new);
 
-    //public static final RegistryObject<Block> T1_STAIRS = BLOCKS.register("lacumite_stairs",() -> new StairsBlock(() -> RegistryHandler.T1_BRICK.getDefaultState(), Block.Properties.create(Material.ROCK)));
+    public static final RegistryObject<Block> T1_STAIRS = BLOCKS.register("lacumite_stairs", () -> new StairsBlock(() -> RegistryHandler.T1_BRICK.get().getDefaultState(),Block.Properties.create(Material.ROCK)));
+    public static final RegistryObject<Block> T1_SLAB = BLOCKS.register("lacumite_slab", () -> new SlabBlock(Block.Properties.from(RegistryHandler.T1_BRICK.get())));
     public static final RegistryObject<Block> T1_BUTTON = BLOCKS.register("lacumite_button", () -> new DungeonButton(Block.Properties.create(Material.ROCK)));
     public static final RegistryObject<Block> T1_PRESSURE_PLATE = BLOCKS.register("lacumite_pressure_plate", () -> new DungeonPressurePlate(PressurePlateBlock.Sensitivity.MOBS,Block.Properties.create(Material.ROCK)));
 
@@ -126,4 +129,6 @@ public class RegistryHandler {
 
     public static final RegistryObject<Item> T1_BUTTON_ITEM = ITEMS.register("lacumite_button", () -> new BlockItemBase(T1_BUTTON.get()));
     public static final RegistryObject<Item> T1_PRESSURE_PLATE_ITEM = ITEMS.register("lacumite_pressure_plate", () -> new BlockItemBase(T1_PRESSURE_PLATE.get()));
+    public static final RegistryObject<Item> T1_STAIRS_ITEM = ITEMS.register("lacumite_stairs", () -> new BlockItemBase(T1_STAIRS.get()));
+    public static final RegistryObject<Item> T1_SLAB_ITEM = ITEMS.register("lacumite_slab", () -> new BlockItemBase(T1_SLAB.get()));
 }
