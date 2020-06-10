@@ -16,15 +16,17 @@ import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 public class BaubleItem extends Item {
+    private final BaubleType type;
 
-    public BaubleItem() {
+    public BaubleItem(BaubleType type) {
         super(new Item.Properties().group(ElegantDungeons.TAB));
+        this.type = type;
     }
 
     @Nullable
     @Override
     public ICapabilityProvider initCapabilities(ItemStack stack, @Nullable CompoundNBT nbt) {
-        IBauble iBauble = () -> BaubleType.RING;
+        IBauble iBauble = () -> type;
         return new ICapabilityProvider() {
             private final LazyOptional<IBauble> opt = LazyOptional.of(() -> iBauble);
 
