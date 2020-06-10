@@ -1,0 +1,8 @@
+{
+    "parent": "block/outer_stairs",
+    "textures": {
+        "bottom": "elegantdungeons:blocks/lacumite_brick",
+        "top": "elegantdungeons:blocks/lacumite_brick",
+        "side": "elegantdungeons:blocks/lacumite_brick"
+    }
+}

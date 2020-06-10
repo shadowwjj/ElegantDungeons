@@ -8,7 +8,7 @@ import net.minecraftforge.common.ToolType;
 public class DungeonBrick extends Block {
 
     public DungeonBrick() {
-        super(Block.Properties.create(Material.IRON)
+        super(Block.Properties.create(Material.ROCK)
                 .hardnessAndResistance(1.0f,1200.0f)
                 .sound(SoundType.STONE)
                 .harvestLevel(3)
