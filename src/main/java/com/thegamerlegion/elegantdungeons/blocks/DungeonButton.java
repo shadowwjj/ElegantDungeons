@@ -9,9 +9,9 @@ public class DungeonButton extends WoodButtonBlock {
     ) {
         super(properties
                 .doesNotBlockMovement()
-                .hardnessAndResistance(1.0f,1200.0f)
+                .hardnessAndResistance(100.0f,1200.0f)
                 .sound(SoundType.STONE)
-                .harvestLevel(3)
+                .harvestLevel(4)
         );
     }
 }

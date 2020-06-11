@@ -90,36 +90,36 @@ public class RegistryHandler {
     // Blocks
     public static final RegistryObject<Block> T1_BRICK = BLOCKS.register("lacumite_brick", DungeonBrick::new);
     public static final RegistryObject<Block> T1_BRICK_CHISELED = BLOCKS.register("lacumite_brick_chiseled", DungeonBrick::new);
-    public static final RegistryObject<Block> T1_STAIRS = BLOCKS.register("lacumite_stairs", () -> new StairsBlock(() -> RegistryHandler.T1_BRICK.get().getDefaultState(),Block.Properties.create(Material.ROCK).hardnessAndResistance(1.0f,1200.0f)));
-    public static final RegistryObject<Block> T1_SLAB = BLOCKS.register("lacumite_slab", () -> new SlabBlock(Block.Properties.from(RegistryHandler.T1_BRICK.get())));
+    public static final RegistryObject<Block> T1_STAIRS = BLOCKS.register("lacumite_stairs", () -> new StairsBlock(() -> RegistryHandler.T1_BRICK.get().getDefaultState(),Block.Properties.create(Material.ROCK).hardnessAndResistance(100.0f,1200.0f)));
+    public static final RegistryObject<Block> T1_SLAB = BLOCKS.register("lacumite_slab", () -> new SlabBlock(Block.Properties.from(RegistryHandler.T1_BRICK.get()).hardnessAndResistance(100.0f,1200.0f)));
     public static final RegistryObject<Block> T1_BUTTON = BLOCKS.register("lacumite_button", () -> new DungeonButton(Block.Properties.create(Material.ROCK)));
     public static final RegistryObject<Block> T1_PRESSURE_PLATE = BLOCKS.register("lacumite_pressure_plate", () -> new DungeonPressurePlate(PressurePlateBlock.Sensitivity.MOBS,Block.Properties.create(Material.ROCK)));
 
     public static final RegistryObject<Block> T2_BRICK = BLOCKS.register("fossenium_brick", DungeonBrick::new);
     public static final RegistryObject<Block> T2_BRICK_CHISELED = BLOCKS.register("fossenium_brick_chiseled", DungeonBrick::new);
-    public static final RegistryObject<Block> T2_STAIRS = BLOCKS.register("fossenium_stairs", () -> new StairsBlock(() -> RegistryHandler.T2_BRICK.get().getDefaultState(),Block.Properties.create(Material.ROCK).hardnessAndResistance(1.0f,1200.0f)));
-    public static final RegistryObject<Block> T2_SLAB = BLOCKS.register("fossenium_slab", () -> new SlabBlock(Block.Properties.from(RegistryHandler.T2_BRICK.get())));
+    public static final RegistryObject<Block> T2_STAIRS = BLOCKS.register("fossenium_stairs", () -> new StairsBlock(() -> RegistryHandler.T2_BRICK.get().getDefaultState(),Block.Properties.create(Material.ROCK).hardnessAndResistance(100.0f,1200.0f)));
+    public static final RegistryObject<Block> T2_SLAB = BLOCKS.register("fossenium_slab", () -> new SlabBlock(Block.Properties.from(RegistryHandler.T2_BRICK.get()).hardnessAndResistance(100.0f,1200.0f)));
     public static final RegistryObject<Block> T2_BUTTON = BLOCKS.register("fossenium_button", () -> new DungeonButton(Block.Properties.create(Material.ROCK)));
     public static final RegistryObject<Block> T2_PRESSURE_PLATE = BLOCKS.register("fossenium_pressure_plate", () -> new DungeonPressurePlate(PressurePlateBlock.Sensitivity.MOBS,Block.Properties.create(Material.ROCK)));
 
     public static final RegistryObject<Block> T3_BRICK = BLOCKS.register("jamanite_brick", DungeonBrick::new);
     public static final RegistryObject<Block> T3_BRICK_CHISELED = BLOCKS.register("jamanite_brick_chiseled", DungeonBrick::new);
-    public static final RegistryObject<Block> T3_STAIRS = BLOCKS.register("jamanite_stairs", () -> new StairsBlock(() -> RegistryHandler.T3_BRICK.get().getDefaultState(),Block.Properties.create(Material.ROCK).hardnessAndResistance(1.0f,1200.0f)));
-    public static final RegistryObject<Block> T3_SLAB = BLOCKS.register("jamanite_slab", () -> new SlabBlock(Block.Properties.from(RegistryHandler.T3_BRICK.get())));
+    public static final RegistryObject<Block> T3_STAIRS = BLOCKS.register("jamanite_stairs", () -> new StairsBlock(() -> RegistryHandler.T3_BRICK.get().getDefaultState(),Block.Properties.create(Material.ROCK).hardnessAndResistance(100.0f,1200.0f)));
+    public static final RegistryObject<Block> T3_SLAB = BLOCKS.register("jamanite_slab", () -> new SlabBlock(Block.Properties.from(RegistryHandler.T3_BRICK.get()).hardnessAndResistance(100.0f,1200.0f)));
     public static final RegistryObject<Block> T3_BUTTON = BLOCKS.register("jamanite_button", () -> new DungeonButton(Block.Properties.create(Material.ROCK)));
     public static final RegistryObject<Block> T3_PRESSURE_PLATE = BLOCKS.register("jamanite_pressure_plate", () -> new DungeonPressurePlate(PressurePlateBlock.Sensitivity.MOBS,Block.Properties.create(Material.ROCK)));
 
     public static final RegistryObject<Block> T4_BRICK = BLOCKS.register("dieran_brick", DungeonBrick::new);
     public static final RegistryObject<Block> T4_BRICK_CHISELED = BLOCKS.register("dieran_brick_chiseled", DungeonBrick::new);
-    public static final RegistryObject<Block> T4_STAIRS = BLOCKS.register("dieran_stairs", () -> new StairsBlock(() -> RegistryHandler.T4_BRICK.get().getDefaultState(),Block.Properties.create(Material.ROCK).hardnessAndResistance(1.0f,1200.0f)));
-    public static final RegistryObject<Block> T4_SLAB = BLOCKS.register("dieran_slab", () -> new SlabBlock(Block.Properties.from(RegistryHandler.T4_BRICK.get())));
+    public static final RegistryObject<Block> T4_STAIRS = BLOCKS.register("dieran_stairs", () -> new StairsBlock(() -> RegistryHandler.T4_BRICK.get().getDefaultState(),Block.Properties.create(Material.ROCK).hardnessAndResistance(100.0f,1200.0f)));
+    public static final RegistryObject<Block> T4_SLAB = BLOCKS.register("dieran_slab", () -> new SlabBlock(Block.Properties.from(RegistryHandler.T4_BRICK.get()).hardnessAndResistance(100.0f,1200.0f)));
     public static final RegistryObject<Block> T4_BUTTON = BLOCKS.register("dieran_button", () -> new DungeonButton(Block.Properties.create(Material.ROCK)));
     public static final RegistryObject<Block> T4_PRESSURE_PLATE = BLOCKS.register("dieran_pressure_plate", () -> new DungeonPressurePlate(PressurePlateBlock.Sensitivity.MOBS,Block.Properties.create(Material.ROCK)));
 
     public static final RegistryObject<Block> T5_BRICK = BLOCKS.register("myrkurite_brick", DungeonBrick::new);
     public static final RegistryObject<Block> T5_BRICK_CHISELED = BLOCKS.register("myrkurite_brick_chiseled", DungeonBrick::new);
-    public static final RegistryObject<Block> T5_STAIRS = BLOCKS.register("myrkurite_stairs", () -> new StairsBlock(() -> RegistryHandler.T5_BRICK.get().getDefaultState(),Block.Properties.create(Material.ROCK).hardnessAndResistance(1.0f,1200.0f)));
-    public static final RegistryObject<Block> T5_SLAB = BLOCKS.register("myrkurite_slab", () -> new SlabBlock(Block.Properties.from(RegistryHandler.T5_BRICK.get())));
+    public static final RegistryObject<Block> T5_STAIRS = BLOCKS.register("myrkurite_stairs", () -> new StairsBlock(() -> RegistryHandler.T5_BRICK.get().getDefaultState(),Block.Properties.create(Material.ROCK).hardnessAndResistance(100.0f,1200.0f)));
+    public static final RegistryObject<Block> T5_SLAB = BLOCKS.register("myrkurite_slab", () -> new SlabBlock(Block.Properties.from(RegistryHandler.T5_BRICK.get()).hardnessAndResistance(100.0f,1200.0f)));
     public static final RegistryObject<Block> T5_BUTTON = BLOCKS.register("myrkurite_button", () -> new DungeonButton(Block.Properties.create(Material.ROCK)));
     public static final RegistryObject<Block> T5_PRESSURE_PLATE = BLOCKS.register("myrkurite_pressure_plate", () -> new DungeonPressurePlate(PressurePlateBlock.Sensitivity.MOBS,Block.Properties.create(Material.ROCK)));
 

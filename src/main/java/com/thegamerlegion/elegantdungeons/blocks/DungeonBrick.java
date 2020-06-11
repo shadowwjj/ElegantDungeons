@@ -9,9 +9,9 @@ public class DungeonBrick extends Block {
 
     public DungeonBrick() {
         super(Block.Properties.create(Material.ROCK)
-                .hardnessAndResistance(1.0f,1200.0f)
+                .hardnessAndResistance(100.0f,1200.0f)
                 .sound(SoundType.STONE)
-                .harvestLevel(3)
+                .harvestLevel(4)
                 .harvestTool(ToolType.PICKAXE)
         );
 

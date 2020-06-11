@@ -1,5 +1,6 @@
 package com.thegamerlegion.elegantdungeons.items.tools;
 
+import com.thegamerlegion.elegantdungeons.util.RegistryHandler;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Items;
 import net.minecraft.item.crafting.Ingredient;
@@ -8,7 +9,7 @@ import net.minecraft.util.LazyValue;
 import java.util.function.Supplier;
 
 public enum DungItemTiers implements IItemTier {
-    BRICK_BREAKER(100, 6.0F, 2.0F, 2, 14, () -> { return Ingredient.fromItems(Items.IRON_INGOT);});
+    BRICK_BREAKER(20, 60.0F, 2.0F, 4, 14, () -> { return Ingredient.fromItems(RegistryHandler.T5_CRYSTAL_SHARD.get());});
 
     private final int maxUses;
     private final float efficiency;
