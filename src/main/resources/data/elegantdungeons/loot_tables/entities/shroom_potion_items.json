@@ -2,17 +2,12 @@
   "type": "minecraft:entity",
   "pools": [
     {
-      "rolls": 2,
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:brown_mushroom",
-          "weight": 4
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:sugar",
-          "weight": 2
+          "weight": 3
         },
         {
           "type": "minecraft:item",
@@ -26,11 +21,27 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:glass_bottle",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:glistering_melon_slice",
           "weight": 1
-        }
-      ],
-      "functions": [
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "weight": 0.5,
+          "expand": "false",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:luck\"}"
+            }
+          ]
+        },
+        "functions": [
         {
           "function": "minecraft:apply_bonus",
           "enchantment": "minecraft:looting",
@@ -40,6 +51,6 @@
           }
         }
       ]
-    }
+    ]
   ]
 }

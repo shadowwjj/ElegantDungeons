@@ -9,6 +9,9 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
 
+/**
+ * USED IN RENDERING ENTITIES SUCH AS CHESTS AND MOBS, SEPARATE FROM REGISTERING THEM!!!
+ * **/
 
 @Mod.EventBusSubscriber(modid = ElegantDungeons.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT )
 
