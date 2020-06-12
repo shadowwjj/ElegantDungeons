@@ -86,5 +86,7 @@
   "block.elegantdungeons.myrkurite_crystal_block": "Myrkurite Crystal Block",
 
   "item.elegantdungeons.brick_breaker": "The Brick Breaker",
-  "itemGroup.elegantDungeonsTab": "Elegant Dungeons"
+  "itemGroup.elegantDungeonsTab": "Elegant Dungeons",
+
+  "entity.elegantdungeons.shroom_red_entity": "Red Mushite"
 }
