@@ -1,6 +1,7 @@
 package com.thegamerlegion.elegantdungeons.util;
 
 import com.thegamerlegion.elegantdungeons.ElegantDungeons;
+import com.thegamerlegion.elegantdungeons.client.entity.render.ShroomBrownEntityRender;
 import com.thegamerlegion.elegantdungeons.client.entity.render.ShroomRedEntityRender;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -19,6 +20,7 @@ public class ClientEventBusSubscriber {
     @SubscribeEvent
     public static void clientSetup(FMLClientSetupEvent event) {
         RenderingRegistry.registerEntityRenderingHandler(RegistryHandler.SHROOM_RED_ENTITY.get(), ShroomRedEntityRender::new);
+        RenderingRegistry.registerEntityRenderingHandler(RegistryHandler.SHROOM_BROWN_ENTITY.get(), ShroomBrownEntityRender::new);
     }
 
 }

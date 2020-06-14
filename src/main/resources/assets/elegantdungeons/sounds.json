@@ -1,0 +1,21 @@
+{
+  "entity.mushroom_entity.ambient": {
+    "category": "entity",
+    "subtitle": "entity.mushroom_entity.ambient",
+    "sounds": [{
+      "name": "elegantdungeons:entity/entity.mushroom_entity.ambient", "stream": "true"},{"name": "elegantdungeons:entity/entity.mushroom_entity.ambient2", "stream": "true"},{"name": "elegantdungeons:entity/entity.mushroom_entity.ambient3", "stream": "true"}]
+  },
+
+  "entity.mushroom_entity.hurt": {
+    "category": "entity",
+    "subtitle": "entity.mushroom_entity.hurt",
+    "sounds": [{
+      "name": "elegantdungeons:entity/entity.mushroom_entity.hurt", "stream": "true"},{"name": "elegantdungeons:entity/entity.mushroom_entity.hurt2", "stream": "true"},{"name": "elegantdungeons:entity/entity.mushroom_entity.hurt3", "stream": "true"}]
+  },
+
+  "entity.mushroom_entity.death": {
+    "category": "entity",
+    "subtitle": "entity.mushroom_entity.death",
+    "sounds": [{"name": "elegantdungeons:entity/entity.mushroom_entity.death", "stream":  "true"}]
+  }
+}

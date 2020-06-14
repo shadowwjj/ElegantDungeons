@@ -1,7 +1,6 @@
 package com.thegamerlegion.elegantdungeons.entities;
 
 import com.thegamerlegion.elegantdungeons.util.RegistryHandler;
-import net.minecraft.client.audio.Sound;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
@@ -9,21 +8,17 @@ import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.potion.AttackDamageEffect;
 import net.minecraft.potion.EffectInstance;
-import net.minecraft.potion.Potion;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.world.World;
-import org.lwjgl.system.CallbackI;
-
-import java.rmi.registry.Registry;
 
 import static net.minecraft.potion.Effects.NAUSEA;
+import static net.minecraft.potion.Effects.POISON;
 
-public class ShroomRedEntity extends MonsterEntity {
+public class ShroomBrownEntity extends MonsterEntity {
 
-    public ShroomRedEntity(EntityType<? extends MonsterEntity> type, World worldIn) {
+    public ShroomBrownEntity(EntityType<? extends MonsterEntity> type, World worldIn) {
         super(type, worldIn);
     }
 
@@ -54,7 +49,7 @@ public class ShroomRedEntity extends MonsterEntity {
         if (super.attackEntityAsMob(entity)) {
             LivingEntity LIVE_ENT = (LivingEntity) entity;
             if (LIVE_ENT != null) {
-                LIVE_ENT.addPotionEffect(new EffectInstance(NAUSEA, 100, 0));
+                LIVE_ENT.addPotionEffect(new EffectInstance(POISON, 100, 0));
                 return true;
             }
 

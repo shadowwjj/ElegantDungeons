@@ -88,5 +88,6 @@
   "item.elegantdungeons.brick_breaker": "The Brick Breaker",
   "itemGroup.elegantDungeonsTab": "Elegant Dungeons",
 
-  "entity.elegantdungeons.shroom_red_entity": "Red Mushite"
+  "entity.elegantdungeons.shroom_red_entity": "Red Mushite",
+  "entity.elegantdungeons.shroom_brown_entity": "Brown Mushite"
 }

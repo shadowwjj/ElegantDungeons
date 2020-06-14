@@ -4,6 +4,7 @@ import com.lazy.baubles.api.BaubleType;
 import com.thegamerlegion.elegantdungeons.ElegantDungeons;
 import com.thegamerlegion.elegantdungeons.blocks.*;
 import com.thegamerlegion.elegantdungeons.client.entity.render.ShroomRedEntityRender;
+import com.thegamerlegion.elegantdungeons.entities.ShroomBrownEntity;
 import com.thegamerlegion.elegantdungeons.entities.ShroomRedEntity;
 import com.thegamerlegion.elegantdungeons.items.BaubleItem;
 import com.thegamerlegion.elegantdungeons.items.ItemBase;
@@ -17,7 +18,9 @@ import net.minecraft.block.material.Material;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
 import net.minecraft.item.Item;
+import net.minecraft.item.SpawnEggItem;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.SoundEvent;
 import net.minecraft.world.storage.loot.LootTable;
 import net.minecraft.world.storage.loot.LootTableManager;
 import net.minecraftforge.fml.RegistryObject;
@@ -32,8 +35,10 @@ public class RegistryHandler {
     public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, ElegantDungeons.MOD_ID);
     public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, ElegantDungeons.MOD_ID);
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = new DeferredRegister<>(ForgeRegistries.ENTITIES, ElegantDungeons.MOD_ID);
+    public static final DeferredRegister<SoundEvent> SOUNDS = new DeferredRegister<SoundEvent>(ForgeRegistries.SOUND_EVENTS, ElegantDungeons.MOD_ID);
 
     public static void init() {
+        SOUNDS.register(FMLJavaModLoadingContext.get().getModEventBus());
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
         BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
         ENTITY_TYPES.register(FMLJavaModLoadingContext.get().getModEventBus());
@@ -182,10 +187,20 @@ public class RegistryHandler {
     public static final RegistryObject<Item> T4_CRYSTAL_ITEM = ITEMS.register("dieran_crystal_block", () -> new BlockItemBase(T4_CRYSTAL.get()));
     public static final RegistryObject<Item> T5_CRYSTAL_ITEM = ITEMS.register("myrkurite_crystal_block", () -> new BlockItemBase(T5_CRYSTAL.get()));
 
-    //Entities (MOBS)
+    //Entities (MOBS + Their Sounds Under Them)
 
     public static final RegistryObject<EntityType<ShroomRedEntity>> SHROOM_RED_ENTITY = ENTITY_TYPES.register("shroom_red_entity", () -> EntityType.Builder.<ShroomRedEntity>create(ShroomRedEntity::new, EntityClassification.MONSTER)
-            .size(0.8f,0.8f)
+            .size(0.6f,0.6f)
             .setTrackingRange(3)
             .build(new ResourceLocation(ElegantDungeons.MOD_ID, "shroom_red_entity").toString()));
+    public static final RegistryObject<EntityType<ShroomBrownEntity>> SHROOM_BROWN_ENTITY = ENTITY_TYPES.register("shroom_brown_entity", () -> EntityType.Builder.<ShroomBrownEntity>create(ShroomBrownEntity::new, EntityClassification.MONSTER)
+            .size(0.6f,0.6f)
+            .setTrackingRange(3)
+            .build(new ResourceLocation(ElegantDungeons.MOD_ID, "shroom_brown_entity").toString()));
+    public static final RegistryObject<SoundEvent> SHROOM_AMBIENT = SOUNDS.register("entity.mushroom_entity.ambient",
+            () -> new SoundEvent(new ResourceLocation(ElegantDungeons.MOD_ID, "entity.mushroom_entity.ambient")));
+    public static final RegistryObject<SoundEvent> SHROOM_DEATH = SOUNDS.register("entity.mushroom_entity.death",
+            () -> new SoundEvent(new ResourceLocation(ElegantDungeons.MOD_ID, "entity.mushroom_entity.death")));
+    public static final RegistryObject<SoundEvent> SHROOM_HURT = SOUNDS.register("entity.mushroom_entity.hurt",
+            () -> new SoundEvent(new ResourceLocation(ElegantDungeons.MOD_ID, "entity.mushroom_entity.hurt")));
 }
