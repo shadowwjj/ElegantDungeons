@@ -17,5 +17,18 @@
     "category": "entity",
     "subtitle": "entity.mushroom_entity.death",
     "sounds": [{"name": "elegantdungeons:entity/entity.mushroom_entity.death", "stream":  "true"}]
+  },
+
+  "entity.golem.hurt": {
+    "category": "entity",
+    "subtitle": "entity.golem.hurt",
+    "sounds": [{
+      "name": "elegantdungeons:entity/entity.golem.hurt", "stream": "true"},{"name": "elegantdungeons:entity/entity.golem.hurt2", "stream": "true"},{"name": "elegantdungeons:entity/entity.golem.hurt3", "stream": "true"}]
+  },
+
+  "entity.golem.death": {
+    "category": "entity",
+    "subtitle": "entity.golem.death",
+    "sounds": [{"name": "elegantdungeons:entity/entity.golem.death", "stream":  "true"}]
   }
 }

@@ -4,6 +4,7 @@ import com.lazy.baubles.api.BaubleType;
 import com.thegamerlegion.elegantdungeons.ElegantDungeons;
 import com.thegamerlegion.elegantdungeons.blocks.*;
 import com.thegamerlegion.elegantdungeons.client.entity.render.ShroomRedEntityRender;
+import com.thegamerlegion.elegantdungeons.entities.LacumiteGolem;
 import com.thegamerlegion.elegantdungeons.entities.ShroomBrownEntity;
 import com.thegamerlegion.elegantdungeons.entities.ShroomRedEntity;
 import com.thegamerlegion.elegantdungeons.items.BaubleItem;
@@ -191,22 +192,39 @@ public class RegistryHandler {
     public static final RegistryObject<Item> T4_CRYSTAL_ITEM = ITEMS.register("dieran_crystal_block", () -> new BlockItemBase(T4_CRYSTAL.get()));
     public static final RegistryObject<Item> T5_CRYSTAL_ITEM = ITEMS.register("myrkurite_crystal_block", () -> new BlockItemBase(T5_CRYSTAL.get()));
 
-    //Entities (MOBS + Their Sounds Under Them)
+    //Entities (MOBS + SPAWN EGG + Their Sounds Under Them)
 
     public static final RegistryObject<EntityType<ShroomRedEntity>> SHROOM_RED_ENTITY = ENTITY_TYPES.register("shroom_red_entity", () -> EntityType.Builder.<ShroomRedEntity>create(ShroomRedEntity::new, EntityClassification.MONSTER)
             .size(0.6f,0.6f)
             .setTrackingRange(3)
             .build(new ResourceLocation(ElegantDungeons.MOD_ID, "shroom_red_entity").toString()));
     public static final RegistryObject<ModdedSpawnEggItem> SHROOM_RED_EGG = ITEMS.register("shroom_red_egg", () -> new ModdedSpawnEggItem(SHROOM_RED_ENTITY, 0xeb4034, 0xfff8e6, new Item.Properties().group(ElegantDungeons.TAB)));
+
     public static final RegistryObject<EntityType<ShroomBrownEntity>> SHROOM_BROWN_ENTITY = ENTITY_TYPES.register("shroom_brown_entity", () -> EntityType.Builder.<ShroomBrownEntity>create(ShroomBrownEntity::new, EntityClassification.MONSTER)
             .size(0.6f,0.6f)
             .setTrackingRange(3)
             .build(new ResourceLocation(ElegantDungeons.MOD_ID, "shroom_brown_entity").toString()));
     public static final RegistryObject<ModdedSpawnEggItem> SHROOM_BROWN_EGG = ITEMS.register("shroom_brown_egg", () -> new ModdedSpawnEggItem(SHROOM_BROWN_ENTITY, 0x806e41, 0xfff8e6, new Item.Properties().group(ElegantDungeons.TAB)));
+
     public static final RegistryObject<SoundEvent> SHROOM_AMBIENT = SOUNDS.register("entity.mushroom_entity.ambient",
             () -> new SoundEvent(new ResourceLocation(ElegantDungeons.MOD_ID, "entity.mushroom_entity.ambient")));
     public static final RegistryObject<SoundEvent> SHROOM_DEATH = SOUNDS.register("entity.mushroom_entity.death",
             () -> new SoundEvent(new ResourceLocation(ElegantDungeons.MOD_ID, "entity.mushroom_entity.death")));
     public static final RegistryObject<SoundEvent> SHROOM_HURT = SOUNDS.register("entity.mushroom_entity.hurt",
             () -> new SoundEvent(new ResourceLocation(ElegantDungeons.MOD_ID, "entity.mushroom_entity.hurt")));
+
+
+
+    public static final RegistryObject<EntityType<LacumiteGolem>> LACUMITE_GOLEM = ENTITY_TYPES.register("lacumite_golem", () -> EntityType.Builder.<LacumiteGolem>create(LacumiteGolem::new, EntityClassification.MONSTER)
+            .size(1.0f,2.0f)
+            .setTrackingRange(3)
+            .build(new ResourceLocation(ElegantDungeons.MOD_ID, "lacumite_golem").toString()));
+    public static final RegistryObject<ModdedSpawnEggItem> LACUMITE_GOLEM_EGG = ITEMS.register("lacumite_golem_egg", () -> new ModdedSpawnEggItem(LACUMITE_GOLEM, 0x9f7a66, 0xff9c75, new Item.Properties().group(ElegantDungeons.TAB)));
+
+    public static final RegistryObject<SoundEvent> GOLEM_AMBIENT = SOUNDS.register("entity.golem.ambient",
+            () -> new SoundEvent(new ResourceLocation(ElegantDungeons.MOD_ID, "entity.golem.ambient")));
+    public static final RegistryObject<SoundEvent> GOLEM_DEATH = SOUNDS.register("entity.golem.death",
+            () -> new SoundEvent(new ResourceLocation(ElegantDungeons.MOD_ID, "entity.golem.death")));
+    public static final RegistryObject<SoundEvent> GOLEM_HURT = SOUNDS.register("entity.golem.hurt",
+            () -> new SoundEvent(new ResourceLocation(ElegantDungeons.MOD_ID, "entity.golem.hurt")));
 }

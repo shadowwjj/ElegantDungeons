@@ -1,8 +1,10 @@
 package com.thegamerlegion.elegantdungeons.util;
 
 import com.thegamerlegion.elegantdungeons.ElegantDungeons;
+import com.thegamerlegion.elegantdungeons.client.entity.render.LacumiteGolemRender;
 import com.thegamerlegion.elegantdungeons.client.entity.render.ShroomBrownEntityRender;
 import com.thegamerlegion.elegantdungeons.client.entity.render.ShroomRedEntityRender;
+import com.thegamerlegion.elegantdungeons.entities.LacumiteGolem;
 import com.thegamerlegion.elegantdungeons.items.ModdedSpawnEggItem;
 import net.minecraft.entity.EntityType;
 import net.minecraftforge.api.distmarker.Dist;
@@ -25,6 +27,7 @@ public class ClientEventBusSubscriber {
     public static void clientSetup(FMLClientSetupEvent event) {
         RenderingRegistry.registerEntityRenderingHandler(RegistryHandler.SHROOM_RED_ENTITY.get(), ShroomRedEntityRender::new);
         RenderingRegistry.registerEntityRenderingHandler(RegistryHandler.SHROOM_BROWN_ENTITY.get(), ShroomBrownEntityRender::new);
+        RenderingRegistry.registerEntityRenderingHandler(RegistryHandler.LACUMITE_GOLEM.get(), LacumiteGolemRender::new);
     }
 
     @SubscribeEvent(priority = EventPriority.LOWEST)

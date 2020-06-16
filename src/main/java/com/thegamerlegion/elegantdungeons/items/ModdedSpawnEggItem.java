@@ -26,7 +26,7 @@ import java.util.Map;
  * This class gets around it by passing "null" to the SpawnEggItem constructor
  * and doing the initialisation after registry events have finished firing.
  * <p>
- * TODO: Remove once Forge adds this stuff in itself.
+ * 
  *
  * @author Cadiboo
  */
