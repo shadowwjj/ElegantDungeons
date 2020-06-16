@@ -8,6 +8,7 @@ import com.thegamerlegion.elegantdungeons.entities.ShroomBrownEntity;
 import com.thegamerlegion.elegantdungeons.entities.ShroomRedEntity;
 import com.thegamerlegion.elegantdungeons.items.BaubleItem;
 import com.thegamerlegion.elegantdungeons.items.ItemBase;
+import com.thegamerlegion.elegantdungeons.items.ModdedSpawnEggItem;
 import com.thegamerlegion.elegantdungeons.items.tools.BrickBreaker;
 import com.thegamerlegion.elegantdungeons.items.tools.DungItemTiers;
 import net.minecraft.block.Block;
@@ -17,6 +18,7 @@ import net.minecraft.block.StairsBlock;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.util.ResourceLocation;
@@ -29,6 +31,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+
+import javax.swing.*;
 
 public class RegistryHandler {
 
@@ -193,10 +197,12 @@ public class RegistryHandler {
             .size(0.6f,0.6f)
             .setTrackingRange(3)
             .build(new ResourceLocation(ElegantDungeons.MOD_ID, "shroom_red_entity").toString()));
+    public static final RegistryObject<ModdedSpawnEggItem> SHROOM_RED_EGG = ITEMS.register("shroom_red_egg", () -> new ModdedSpawnEggItem(SHROOM_RED_ENTITY, 0xeb4034, 0xfff8e6, new Item.Properties().group(ElegantDungeons.TAB)));
     public static final RegistryObject<EntityType<ShroomBrownEntity>> SHROOM_BROWN_ENTITY = ENTITY_TYPES.register("shroom_brown_entity", () -> EntityType.Builder.<ShroomBrownEntity>create(ShroomBrownEntity::new, EntityClassification.MONSTER)
             .size(0.6f,0.6f)
             .setTrackingRange(3)
             .build(new ResourceLocation(ElegantDungeons.MOD_ID, "shroom_brown_entity").toString()));
+    public static final RegistryObject<ModdedSpawnEggItem> SHROOM_BROWN_EGG = ITEMS.register("shroom_brown_egg", () -> new ModdedSpawnEggItem(SHROOM_BROWN_ENTITY, 0x806e41, 0xfff8e6, new Item.Properties().group(ElegantDungeons.TAB)));
     public static final RegistryObject<SoundEvent> SHROOM_AMBIENT = SOUNDS.register("entity.mushroom_entity.ambient",
             () -> new SoundEvent(new ResourceLocation(ElegantDungeons.MOD_ID, "entity.mushroom_entity.ambient")));
     public static final RegistryObject<SoundEvent> SHROOM_DEATH = SOUNDS.register("entity.mushroom_entity.death",
