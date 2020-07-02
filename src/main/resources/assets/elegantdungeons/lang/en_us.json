@@ -51,6 +51,7 @@
   "block.elegantdungeons.lacumite_button": "Lacumite Button",
   "block.elegantdungeons.lacumite_pressure_plate": "Lacumite Pressure Plate",
   "block.elegantdungeons.lacumite_crystal_block": "Lacumite Crystal Block",
+  "block.elegantdungeons.lacumite_false_brick": "Lacumite False Brick",
 
   "block.elegantdungeons.fossenium_brick": "Fossenium Brick",
   "block.elegantdungeons.fossenium_brick_chiseled": "Fossenium Brick Chiseled",
@@ -59,6 +60,7 @@
   "block.elegantdungeons.fossenium_button": "Fossenium Button",
   "block.elegantdungeons.fossenium_pressure_plate": "Fossenium Pressure Plate",
   "block.elegantdungeons.fossenium_crystal_block": "Fossenium Crystal Block",
+  "block.elegantdungeons.fossenium_false_brick": "Fossenium False Brick",
 
   "block.elegantdungeons.jamanite_brick": "Jamanite Brick",
   "block.elegantdungeons.jamanite_brick_chiseled": "Jamanite Brick Chiseled",
@@ -67,7 +69,7 @@
   "block.elegantdungeons.jamanite_button": "Jamanite Button",
   "block.elegantdungeons.jamanite_pressure_plate": "Jamanite Pressure Plate",
   "block.elegantdungeons.jamanite_crystal_block": "Jamanite Crystal Block",
-
+  "block.elegantdungeons.jamanite_false_brick": "Jamanite False Brick",
 
   "block.elegantdungeons.dieran_brick": "Dieran Brick",
   "block.elegantdungeons.dieran_brick_chiseled": "Dieran Brick Chiseled",
@@ -76,6 +78,7 @@
   "block.elegantdungeons.dieran_button": "Dieran Button",
   "block.elegantdungeons.dieran_pressure_plate": "Dieran Pressure Plate",
   "block.elegantdungeons.dieran_crystal_block": "Dieran Crystal Block",
+  "block.elegantdungeons.dieran_false_brick": "Dieran False Brick",
 
   "block.elegantdungeons.myrkurite_brick": "Myrkurite Brick",
   "block.elegantdungeons.myrkurite_brick_chiseled": "Myrkurite Brick Chiseled",
@@ -84,6 +87,7 @@
   "block.elegantdungeons.myrkurite_button": "Myrkurite Button",
   "block.elegantdungeons.myrkurite_pressure_plate": "Myrkurite Pressure Plate",
   "block.elegantdungeons.myrkurite_crystal_block": "Myrkurite Crystal Block",
+  "block.elegantdungeons.myrkurite_false_brick": "Myrkurite False Brick",
 
   "item.elegantdungeons.brick_breaker": "The Brick Breaker",
   "itemGroup.elegantDungeonsTab": "Elegant Dungeons",
