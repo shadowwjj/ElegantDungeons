@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "elegantdungeons:items/brick_breaker"
+    "layer0": "elegantdungeons:items/mystic_branch"
   }
 }

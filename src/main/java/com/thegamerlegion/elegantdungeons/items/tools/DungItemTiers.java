@@ -9,14 +9,16 @@ import net.minecraft.util.LazyValue;
 import java.util.function.Supplier;
 
 public enum DungItemTiers implements IItemTier {
-    BRICK_BREAKER(20, 60.0F, 2.0F, 4, 14, () -> { return Ingredient.fromItems(RegistryHandler.T5_CRYSTAL_SHARD.get());});
-
+    BRICK_BREAKER(20, 60.0F, 2.0F, 4, 14, () -> { return Ingredient.fromItems(RegistryHandler.T5_CRYSTAL_SHARD.get());}),
+    CHUNCHUNMARU(800, 0.0F, 2.5F, 0, 14, () -> { return Ingredient.fromItems(Items.IRON_INGOT);});
     private final int maxUses;
     private final float efficiency;
     private final float attackDamage;
     private final int harvestLevel;
     private final int enchantability;
     private final LazyValue<Ingredient> repairMaterial;
+
+
 
     DungItemTiers(int maxUses, float efficiency, float attackDamage, int harvestLevel, int enchantability, Supplier<Ingredient> repairMaterial) {
         this.maxUses = maxUses;

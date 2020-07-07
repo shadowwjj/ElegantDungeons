@@ -97,5 +97,7 @@
   "entity.elegantdungeons.shroom_brown_entity": "Brown Mushite",
   "item.elegantdungeons.shroom_brown_egg": "Brown Mushite Spawn Egg",
   "entity.elegantdungeons.lacumite_golem": "Lacumite Golem",
-  "item.elegantdungeons.lacumite_golem_egg": "Lacumite Golem Spawn Egg"
+  "item.elegantdungeons.lacumite_golem_egg": "Lacumite Golem Spawn Egg",
+  "entity.elegantdungeons.rageroot": "Rageroot",
+  "item.elegantdungeons.rageroot_egg": "Rageroot Spawn Egg"
 }
