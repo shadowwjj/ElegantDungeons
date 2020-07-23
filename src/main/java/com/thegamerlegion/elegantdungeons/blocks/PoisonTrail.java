@@ -1,11 +1,15 @@
 package com.thegamerlegion.elegantdungeons.blocks;
 
+import com.lazy.baubles.container.slots.ArmorSlot;
+import com.lazy.baubles.container.slots.SlotBauble;
+import com.thegamerlegion.elegantdungeons.util.RegistryHandler;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.DyeColor;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.particles.RedstoneParticleData;
@@ -25,6 +29,7 @@ import net.minecraftforge.common.ToolType;
 
 import java.util.Random;
 
+import static com.lazy.baubles.api.BaubleType.CHARM;
 import static com.thegamerlegion.elegantdungeons.util.RegistryHandler.BRICK_BREAKER;
 import static net.minecraft.potion.Effects.NAUSEA;
 import static net.minecraft.potion.Effects.POISON;

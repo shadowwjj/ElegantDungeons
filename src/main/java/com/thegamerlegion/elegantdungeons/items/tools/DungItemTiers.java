@@ -10,7 +10,18 @@ import java.util.function.Supplier;
 
 public enum DungItemTiers implements IItemTier {
     BRICK_BREAKER(20, 60.0F, 2.0F, 4, 14, () -> { return Ingredient.fromItems(RegistryHandler.T5_CRYSTAL_SHARD.get());}),
-    CHUNCHUNMARU(800, 0.0F, 2.5F, 0, 14, () -> { return Ingredient.fromItems(Items.IRON_INGOT);});
+
+
+    LACUMITESWORD(500, 0.0F, 2.5F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.T1_CRYSTAL_SHARD.get());}),
+    FOSSENIUMSWORD(650, 0.0F, 3.0F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.T2_CRYSTAL_SHARD.get());}),
+    JAMANITESWORD(700, 0.0F, 3.5F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.T3_CRYSTAL_SHARD.get());}),
+    DIERANSWORD(850, 0.0F, 4.0F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.T4_CRYSTAL_SHARD.get());}),
+    MYRKURITESWORD(1650, 0.0F, 4.5F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.T5_CRYSTAL_SHARD.get());}),
+    CHUNCHUNMARU(800, 0.0F, 2.5F, 0, 14, () -> { return Ingredient.fromItems(Items.IRON_INGOT);}),
+    CORNSWORD(800, 0.0F, 3.7F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());});
+
+
+
     private final int maxUses;
     private final float efficiency;
     private final float attackDamage;

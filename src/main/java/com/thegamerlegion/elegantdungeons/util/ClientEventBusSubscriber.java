@@ -26,12 +26,11 @@ public class ClientEventBusSubscriber {
         RenderingRegistry.registerEntityRenderingHandler(RegistryHandler.SHROOM_BROWN_ENTITY.get(), ShroomBrownEntityRender::new);
         RenderingRegistry.registerEntityRenderingHandler(RegistryHandler.LACUMITE_GOLEM.get(), LacumiteGolemRender::new);
         RenderingRegistry.registerEntityRenderingHandler(RegistryHandler.RAGEROOT.get(), RagerootRender::new);
+        RenderingRegistry.registerEntityRenderingHandler(RegistryHandler.T1BALL.get(), MagicballRender::new);
     }
 
     @SubscribeEvent(priority = EventPriority.LOWEST)
     public static void onPostRegisterEntities(final RegistryEvent.Register<EntityType<?>> event) {
         ModdedSpawnEggItem.initUnaddedEggs();
     }
-
-
 }

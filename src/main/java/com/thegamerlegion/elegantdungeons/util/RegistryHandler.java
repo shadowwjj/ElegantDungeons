@@ -3,36 +3,36 @@ package com.thegamerlegion.elegantdungeons.util;
 import com.lazy.baubles.api.BaubleType;
 import com.thegamerlegion.elegantdungeons.ElegantDungeons;
 import com.thegamerlegion.elegantdungeons.blocks.*;
-import com.thegamerlegion.elegantdungeons.client.entity.render.ShroomRedEntityRender;
+import com.thegamerlegion.elegantdungeons.enchantments.DensenessCurseEnchantment;
+import com.thegamerlegion.elegantdungeons.enchantments.DuneStriderEnchantment;
+import com.thegamerlegion.elegantdungeons.enchantments.LopsidednessCurseEnchantment;
 import com.thegamerlegion.elegantdungeons.entities.*;
 import com.thegamerlegion.elegantdungeons.items.BaubleItem;
 import com.thegamerlegion.elegantdungeons.items.ItemBase;
 import com.thegamerlegion.elegantdungeons.items.ModdedSpawnEggItem;
+import com.thegamerlegion.elegantdungeons.items.armor.DungArmorMaterial;
+import com.thegamerlegion.elegantdungeons.items.baubles.PoisonCrystal;
 import com.thegamerlegion.elegantdungeons.items.tools.BrickBreaker;
+import com.thegamerlegion.elegantdungeons.items.tools.Chunchunmaru;
+import com.thegamerlegion.elegantdungeons.items.tools.BaseSword;
 import com.thegamerlegion.elegantdungeons.items.tools.DungItemTiers;
 import net.minecraft.block.Block;
 import net.minecraft.block.PressurePlateBlock;
-import net.minecraft.block.SlabBlock;
 import net.minecraft.block.StairsBlock;
 import net.minecraft.block.material.Material;
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.EnchantmentType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.monster.MonsterEntity;
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.MagicBall;
-import net.minecraft.item.SpawnEggItem;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
-import net.minecraft.world.storage.loot.LootTable;
-import net.minecraft.world.storage.loot.LootTableManager;
 import net.minecraftforge.fml.RegistryObject;
-import net.minecraftforge.fml.client.registry.RenderingRegistry;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-
-import javax.swing.*;
 
 public class RegistryHandler {
 
@@ -40,12 +40,14 @@ public class RegistryHandler {
     public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, ElegantDungeons.MOD_ID);
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = new DeferredRegister<>(ForgeRegistries.ENTITIES, ElegantDungeons.MOD_ID);
     public static final DeferredRegister<SoundEvent> SOUNDS = new DeferredRegister<SoundEvent>(ForgeRegistries.SOUND_EVENTS, ElegantDungeons.MOD_ID);
+    public static final DeferredRegister<Enchantment> ENCHANTMENTS = new DeferredRegister<>(ForgeRegistries.ENCHANTMENTS, ElegantDungeons.MOD_ID);
 
     public static void init() {
         SOUNDS.register(FMLJavaModLoadingContext.get().getModEventBus());
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
         BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
         ENTITY_TYPES.register(FMLJavaModLoadingContext.get().getModEventBus());
+        ENCHANTMENTS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 
     // Items
@@ -64,6 +66,7 @@ public class RegistryHandler {
     public static final RegistryObject<Item> T5_CRYSTAL_SHARD = ITEMS.register("t5_crystal_shard", ItemBase::new);
     public static final RegistryObject<Item> MORPHIUM_INGOT = ITEMS.register("morphium_ingot", ItemBase::new);
     public static final RegistryObject<Item> MYSTIC_BRANCH = ITEMS.register("mystic_branch", ItemBase::new);
+    public static final RegistryObject<Item> T1BALL_ITEM = ITEMS.register("lacumite_magicball", ItemBase::new);
 
 
     // Ring Baubles
@@ -104,14 +107,74 @@ public class RegistryHandler {
     public static final RegistryObject<Item> BELT_BLACK = ITEMS.register("belt_black", () -> { return new BaubleItem(BaubleType.BELT);});
     public static final RegistryObject<Item> BELT_OBSIDIAN = ITEMS.register("belt_obsidian", () -> { return new BaubleItem(BaubleType.BELT);});
 
+    // Charm Baubles
+    public static final RegistryObject<Item> CHARM_POISON_CRYSTAL = ITEMS.register("charm_poison_crystal", () -> { return new PoisonCrystal();});
+
+
+
+
+
+
     // Tools
     public static final RegistryObject<Item> BRICK_BREAKER = ITEMS.register("brick_breaker", () -> {
         return new BrickBreaker(DungItemTiers.BRICK_BREAKER, 6.0F, new Item.Properties().group(ElegantDungeons.TAB));
     });
 
+
+    // Swords
+    public static final RegistryObject<Item> LACUMITE_SWORD = ITEMS.register("lacumite_sword", () -> {
+        return new BaseSword(DungItemTiers.LACUMITESWORD,-2.4F, new Item.Properties().group(ElegantDungeons.TAB));});
+
+    public static final RegistryObject<Item> FOSSENIUM_SWORD = ITEMS.register("fossenium_sword", () -> {
+        return new BaseSword(DungItemTiers.FOSSENIUMSWORD,-2.4F, new Item.Properties().group(ElegantDungeons.TAB));});
+
+    public static final RegistryObject<Item> JAMANITE_SWORD = ITEMS.register("jamanite_sword", () -> {
+        return new BaseSword(DungItemTiers.JAMANITESWORD,-2.4F, new Item.Properties().group(ElegantDungeons.TAB));});
+
+    public static final RegistryObject<Item> DIERAN_SWORD = ITEMS.register("dieran_sword", () -> {
+        return new BaseSword(DungItemTiers.DIERANSWORD,-2.4F, new Item.Properties().group(ElegantDungeons.TAB));});
+
+    public static final RegistryObject<Item> MYRKURITE_SWORD = ITEMS.register("myrkurite_sword", () -> {
+        return new BaseSword(DungItemTiers.MYRKURITESWORD,-2.4F, new Item.Properties().group(ElegantDungeons.TAB));});
+
     public static final RegistryObject<Item> CHUNCHUNMARU = ITEMS.register("chunchunmaru", () -> {
-        return new BrickBreaker(DungItemTiers.CHUNCHUNMARU,1.5F, new Item.Properties().group(ElegantDungeons.TAB));
-    });
+        return new Chunchunmaru(DungItemTiers.CHUNCHUNMARU,-1.0F, new Item.Properties().group(ElegantDungeons.TAB));});
+
+    public static final RegistryObject<Item> CORNSWORD = ITEMS.register("corn_sword", () -> {
+        return new BaseSword(DungItemTiers.CORNSWORD,-3.0F, new Item.Properties().group(ElegantDungeons.TAB));});
+
+
+
+    // Bows
+
+
+    // Armor
+    public static final RegistryObject<ArmorItem> LACUMITE_HELMET =ITEMS.register("lacumite_helmet", () -> new ArmorItem(DungArmorMaterial.LACUMITE, EquipmentSlotType.HEAD, new Item.Properties().group(ElegantDungeons.TAB)));
+    public static final RegistryObject<ArmorItem> LACUMITE_CHESTPLATE =ITEMS.register("lacumite_chestplate", () -> new ArmorItem(DungArmorMaterial.LACUMITE, EquipmentSlotType.CHEST, new Item.Properties().group(ElegantDungeons.TAB)));
+    public static final RegistryObject<ArmorItem> LACUMITE_LEGGINGS =ITEMS.register("lacumite_leggings", () -> new ArmorItem(DungArmorMaterial.LACUMITE, EquipmentSlotType.LEGS, new Item.Properties().group(ElegantDungeons.TAB)));
+    public static final RegistryObject<ArmorItem> LACUMITE_BOOTS =ITEMS.register("lacumite_boots", () -> new ArmorItem(DungArmorMaterial.LACUMITE, EquipmentSlotType.FEET, new Item.Properties().group(ElegantDungeons.TAB)));
+
+    public static final RegistryObject<ArmorItem> FOSSENIUM_HELMET =ITEMS.register("fossenium_helmet", () -> new ArmorItem(DungArmorMaterial.FOSSENIUM, EquipmentSlotType.HEAD, new Item.Properties().group(ElegantDungeons.TAB)));
+    public static final RegistryObject<ArmorItem> FOSSENIUM_CHESTPLATE =ITEMS.register("fossenium_chestplate", () -> new ArmorItem(DungArmorMaterial.FOSSENIUM, EquipmentSlotType.CHEST, new Item.Properties().group(ElegantDungeons.TAB)));
+    public static final RegistryObject<ArmorItem> FOSSENIUM_LEGGINGS =ITEMS.register("fossenium_leggings", () -> new ArmorItem(DungArmorMaterial.FOSSENIUM, EquipmentSlotType.LEGS, new Item.Properties().group(ElegantDungeons.TAB)));
+    public static final RegistryObject<ArmorItem> FOSSENIUM_BOOTS =ITEMS.register("fossenium_boots", () -> new ArmorItem(DungArmorMaterial.FOSSENIUM, EquipmentSlotType.FEET, new Item.Properties().group(ElegantDungeons.TAB)));
+
+    public static final RegistryObject<ArmorItem> JAMANITE_HELMET =ITEMS.register("jamanite_helmet", () -> new ArmorItem(DungArmorMaterial.JAMANITE, EquipmentSlotType.HEAD, new Item.Properties().group(ElegantDungeons.TAB)));
+    public static final RegistryObject<ArmorItem> JAMANITE_CHESTPLATE =ITEMS.register("jamanite_chestplate", () -> new ArmorItem(DungArmorMaterial.JAMANITE, EquipmentSlotType.CHEST, new Item.Properties().group(ElegantDungeons.TAB)));
+    public static final RegistryObject<ArmorItem> JAMANITE_LEGGINGS =ITEMS.register("jamanite_leggings", () -> new ArmorItem(DungArmorMaterial.JAMANITE, EquipmentSlotType.LEGS, new Item.Properties().group(ElegantDungeons.TAB)));
+    public static final RegistryObject<ArmorItem> JAMANITE_BOOTS =ITEMS.register("jamanite_boots", () -> new ArmorItem(DungArmorMaterial.JAMANITE, EquipmentSlotType.FEET, new Item.Properties().group(ElegantDungeons.TAB)));
+
+    public static final RegistryObject<ArmorItem> DIERAN_HELMET =ITEMS.register("dieran_helmet", () -> new ArmorItem(DungArmorMaterial.DIERAN, EquipmentSlotType.HEAD, new Item.Properties().group(ElegantDungeons.TAB)));
+    public static final RegistryObject<ArmorItem> DIERAN_CHESTPLATE =ITEMS.register("dieran_chestplate", () -> new ArmorItem(DungArmorMaterial.DIERAN, EquipmentSlotType.CHEST, new Item.Properties().group(ElegantDungeons.TAB)));
+    public static final RegistryObject<ArmorItem> DIERAN_LEGGINGS =ITEMS.register("dieran_leggings", () -> new ArmorItem(DungArmorMaterial.DIERAN, EquipmentSlotType.LEGS, new Item.Properties().group(ElegantDungeons.TAB)));
+    public static final RegistryObject<ArmorItem> DIERAN_BOOTS =ITEMS.register("dieran_boots", () -> new ArmorItem(DungArmorMaterial.DIERAN, EquipmentSlotType.FEET, new Item.Properties().group(ElegantDungeons.TAB)));
+
+    public static final RegistryObject<ArmorItem> MYRKURITE_HELMET =ITEMS.register("myrkurite_helmet", () -> new ArmorItem(DungArmorMaterial.MYRKURITE, EquipmentSlotType.HEAD, new Item.Properties().group(ElegantDungeons.TAB)));
+    public static final RegistryObject<ArmorItem> MYRKURITE_CHESTPLATE =ITEMS.register("myrkurite_chestplate", () -> new ArmorItem(DungArmorMaterial.MYRKURITE, EquipmentSlotType.CHEST, new Item.Properties().group(ElegantDungeons.TAB)));
+    public static final RegistryObject<ArmorItem> MYRKURITE_LEGGINGS =ITEMS.register("myrkurite_leggings", () -> new ArmorItem(DungArmorMaterial.MYRKURITE, EquipmentSlotType.LEGS, new Item.Properties().group(ElegantDungeons.TAB)));
+    public static final RegistryObject<ArmorItem> MYRKURITE_BOOTS =ITEMS.register("myrkurite_boots", () -> new ArmorItem(DungArmorMaterial.MYRKURITE, EquipmentSlotType.FEET, new Item.Properties().group(ElegantDungeons.TAB)));
+
+
 
     // Blocks
     public static final RegistryObject<Block> T1_BRICK = BLOCKS.register("lacumite_brick", DungeonBrick::new);
@@ -260,11 +323,19 @@ public class RegistryHandler {
     public static final RegistryObject<SoundEvent> GOLEM_HURT = SOUNDS.register("entity.golem.hurt",
             () -> new SoundEvent(new ResourceLocation(ElegantDungeons.MOD_ID, "entity.golem.hurt")));
 
-
+    public static final RegistryObject<EntityType<MagicBall>> T1BALL = ENTITY_TYPES.register("lacumite_magicball", () -> EntityType.Builder.<MagicBall>create(EntityClassification.MISC)
+            .size(0.25F,0.25F)
+            .setTrackingRange(64)
+            .build(new ResourceLocation(ElegantDungeons.MOD_ID, "lacumite_magicball").toString()));
 
     public static final RegistryObject<EntityType<Rageroot>> RAGEROOT = ENTITY_TYPES.register("rageroot", () -> EntityType.Builder.<Rageroot>create(Rageroot::new, EntityClassification.MONSTER)
             .size(1.0f,2.6f)
             .setTrackingRange(16)
             .build(new ResourceLocation(ElegantDungeons.MOD_ID, "rageroot").toString()));
     public static final RegistryObject<ModdedSpawnEggItem> RAGEROOT_EGG = ITEMS.register("rageroot_egg", () -> new ModdedSpawnEggItem(RAGEROOT, 0x69624, 0x3d9a3a, new Item.Properties().group(ElegantDungeons.TAB)));
+
+    // ENCHANTMENTS
+    public static final RegistryObject<Enchantment> LOPSIDEDNESS_CURSE = ENCHANTMENTS.register("curse_of_lopsidedness", () -> new LopsidednessCurseEnchantment(Enchantment.Rarity.RARE, EnchantmentType.ARMOR, new EquipmentSlotType[] {EquipmentSlotType.HEAD, EquipmentSlotType.CHEST, EquipmentSlotType.LEGS, EquipmentSlotType.FEET}));
+    public static final RegistryObject<Enchantment> DENSENESS_CURSE = ENCHANTMENTS.register("curse_of_denseness", () -> new DensenessCurseEnchantment(Enchantment.Rarity.RARE, EnchantmentType.ARMOR, new EquipmentSlotType[] {EquipmentSlotType.HEAD, EquipmentSlotType.CHEST, EquipmentSlotType.LEGS, EquipmentSlotType.FEET}));
+    public static final RegistryObject<Enchantment> DUNE_STRIDER = ENCHANTMENTS.register("dune_strider", () -> new DuneStriderEnchantment(Enchantment.Rarity.RARE, EnchantmentType.ARMOR_FEET, new EquipmentSlotType[] {EquipmentSlotType.FEET}));
 }

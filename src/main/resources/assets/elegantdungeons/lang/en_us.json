@@ -8,11 +8,48 @@
   "item.elegantdungeons.key_t3_boss": "Jamanite Boss Key",
   "item.elegantdungeons.key_t4_boss": "Dieran Boss Key",
   "item.elegantdungeons.key_t5_boss": "Myrkurite Boss Key",
+
   "item.elegantdungeons.t1_crystal_shard": "Lacumite Crystal Shard",
   "item.elegantdungeons.t2_crystal_shard": "Fossenium Crystal Shard",
   "item.elegantdungeons.t3_crystal_shard": "Jamanite Crystal Shard",
   "item.elegantdungeons.t4_crystal_shard": "Dieran Crystal Shard",
   "item.elegantdungeons.t5_crystal_shard": "Myrkurite Crystal Shard",
+
+  "item.elegantdungeons.mystic_branch": "Mystic Branch",
+
+  "item.elegantdungeons.lacumite_sword": "Lacumite Sword",
+  "item.elegantdungeons.fossenium_sword": "Fossenium Sword",
+  "item.elegantdungeons.jamanite_sword": "Jamanite Sword",
+  "item.elegantdungeons.dieran_sword": "Dieran Sword",
+  "item.elegantdungeons.myrkurite_sword": "Myrkurite Sword",
+  "item.elegantdungeons.chunchunmaru": "Chunchunmaru",
+  "item.elegantdungeons.corn_sword": "Corn Sword",
+
+  "item.elegantdungeons.lacumite_helmet": "Lacumite Helmet",
+  "item.elegantdungeons.lacumite_chestplate": "Lacumite Chestplate",
+  "item.elegantdungeons.lacumite_leggings": "Lacumite Leggings",
+  "item.elegantdungeons.lacumite_boots": "Lacumite Boots",
+
+  "item.elegantdungeons.fossenium_helmet": "Fossenium Helmet",
+  "item.elegantdungeons.fossenium_chestplate": "Fossenium Chestplate",
+  "item.elegantdungeons.fossenium_leggings": "Fossenium Leggings",
+  "item.elegantdungeons.fossenium_boots": "Fossenium Boots",
+
+  "item.elegantdungeons.jamanite_helmet": "Jamanite Helmet",
+  "item.elegantdungeons.jamanite_chestplate": "Jamanite Chestplate",
+  "item.elegantdungeons.jamanite_leggings": "Jamanite Leggings",
+  "item.elegantdungeons.jamanite_boots": "Jamanite Boots",
+
+  "item.elegantdungeons.dieran_helmet": "Dieran Helmet",
+  "item.elegantdungeons.dieran_chestplate": "Dieran Chestplate",
+  "item.elegantdungeons.dieran_leggings": "Dieran Leggings",
+  "item.elegantdungeons.dieran_boots": "Dieran Boots",
+
+  "item.elegantdungeons.myrkurite_helmet": "Myrkurite Helmet",
+  "item.elegantdungeons.myrkurite_chestplate": "Myrkurite Chestplate",
+  "item.elegantdungeons.myrkurite_leggings": "Myrkurite Leggings",
+  "item.elegantdungeons.myrkurite_boots": "Myrkurite Boots",
+
   "item.elegantdungeons.ring_dieran": "Dieran Ring",
   "item.elegantdungeons.ring_fire_gem": "Fire Gem Ring",
   "item.elegantdungeons.ring_fossenium": "Fossenium Ring",
@@ -43,6 +80,7 @@
   "item.elegantdungeons.head_inferno_crown": "Inferno Crown",
   "item.elegantdungeons.head_iron_band": "Iron Band",
   "item.elegantdungeons.head_solar_bandana": "Solar Bandana",
+  "item.elegantdungeons.charm_poison_crystal": "Poison Crystal",
 
   "block.elegantdungeons.lacumite_brick": "Lacumite Brick",
   "block.elegantdungeons.lacumite_brick_chiseled": "Lacumite Brick Chiseled",
@@ -89,6 +127,9 @@
   "block.elegantdungeons.myrkurite_crystal_block": "Myrkurite Crystal Block",
   "block.elegantdungeons.myrkurite_false_brick": "Myrkurite False Brick",
 
+  "block.elegantdungeons.spikes": "Spikes",
+  "block.elegantdungeons.poison_trail": "Poison Trail",
+
   "item.elegantdungeons.brick_breaker": "The Brick Breaker",
   "itemGroup.elegantDungeonsTab": "Elegant Dungeons",
 
@@ -99,5 +140,9 @@
   "entity.elegantdungeons.lacumite_golem": "Lacumite Golem",
   "item.elegantdungeons.lacumite_golem_egg": "Lacumite Golem Spawn Egg",
   "entity.elegantdungeons.rageroot": "Rageroot",
-  "item.elegantdungeons.rageroot_egg": "Rageroot Spawn Egg"
+  "item.elegantdungeons.rageroot_egg": "Rageroot Spawn Egg",
+
+  "enchantment.elegantdungeons.curse_of_lopsidedness": "Curse of Lopsidedness",
+  "enchantment.elegantdungeons.curse_of_denseness": "Curse of Denseness",
+  "enchantment.elegantdungeons.dune_strider": "Dune Strider"
 }
