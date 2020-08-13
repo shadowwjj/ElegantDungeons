@@ -11,7 +11,7 @@ public class LacumiteGolemRender extends MobRenderer<LacumiteGolem, LacumiteGole
 
     protected static final ResourceLocation TEXTURE = new ResourceLocation(ElegantDungeons.MOD_ID, "textures/entity/lacumite_golem.png");
     public LacumiteGolemRender(EntityRendererManager renderManagerIn) {
-        super(renderManagerIn, new LacumiteGolemModel<LacumiteGolem>(), 0.5f);
+        super(renderManagerIn, new LacumiteGolemModel<>(), 0.5f);
 
     }
 

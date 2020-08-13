@@ -32,7 +32,13 @@ public enum DungArmorMaterial implements IArmorMaterial {
 
     MYRKURITE(ElegantDungeons.MOD_ID + ":myrkurite", 17, new int[] {2,5,6,2}, 16,
     SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
-            () -> {return Ingredient.fromItems(RegistryHandler.T1_CRYSTAL_ITEM.get());});
+            () -> {return Ingredient.fromItems(RegistryHandler.T1_CRYSTAL_ITEM.get());}),
+
+    FEYRUNE(ElegantDungeons.MOD_ID + ":feyrune", 17, new int[] {2,5,6,2}, 16,
+            SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F,
+            () -> {return Ingredient.fromItems(RegistryHandler.T1_CRYSTAL_ITEM.get());}),
+
+    ;
 
     private static final int[] MAX_DAMAGE_ARRAY = new int[] {11,16,15,13};
     private final String name;

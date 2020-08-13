@@ -16,6 +16,10 @@
   "item.elegantdungeons.t5_crystal_shard": "Myrkurite Crystal Shard",
 
   "item.elegantdungeons.mystic_branch": "Mystic Branch",
+  "item.elegantdungeons.frog_biscuit": "Frog Biscuit",
+  "item.elegantdungeons.rose_pearl": "Rose Pearl",
+  "item.elegantdungeons.crystal_bubble": "Crystal Bubble",
+  "item.elegantdungeons.relic_shard": "Relic Shard",
 
   "item.elegantdungeons.lacumite_sword": "Lacumite Sword",
   "item.elegantdungeons.fossenium_sword": "Fossenium Sword",
@@ -24,6 +28,34 @@
   "item.elegantdungeons.myrkurite_sword": "Myrkurite Sword",
   "item.elegantdungeons.chunchunmaru": "Chunchunmaru",
   "item.elegantdungeons.corn_sword": "Corn Sword",
+  "item.elegantdungeons.jade_blade": "Jade Blade",
+  "item.elegantdungeons.ebony_blade": "Ebony Blade",
+  "item.elegantdungeons.crescent_cutlass": "Crescent Cutlass",
+  "item.elegantdungeons.flamenco_sword": "Flamenco Sword",
+  "item.elegantdungeons.morphium_roseblade": "Morphium Roseblade",
+  "item.elegantdungeons.slapstick": "Slapstick",
+  "item.elegantdungeons.skeletal_sword": "Skeletal Sword",
+  "item.elegantdungeons.sacred_sword": "Sacred Sword",
+  "item.elegantdungeons.grass_blade": "Grass Blade",
+  "item.elegantdungeons.crystalline_sword": "Crystalline Sword",
+  "item.elegantdungeons.fortune_sword": "Fortune Sword",
+  "item.elegantdungeons.enderous_sword": "Enderous Sword",
+  "item.elegantdungeons.fate_slayer": "Fateslayer",
+  "item.elegantdungeons.demonic_sword": "Demonic Sword",
+  "item.elegantdungeons.beast_blade": "Beast Blade",
+  "item.elegantdungeons.scissor_sword": "Scissor Sword",
+  "item.elegantdungeons.root_ripper": "Root Ripper",
+  "item.elegantdungeons.butter_sword": "Butter Sword",
+  "item.elegantdungeons.sea_slasher": "Sea Slasher",
+  "item.elegantdungeons.feyblade": "Feyblade",
+  "item.elegantdungeons.jester_bester": "Jester Bester",
+  "item.elegantdungeons.vibrant_rapier": "Vibrant Rapier",
+  "item.elegantdungeons.snake_fang": "Snake Fang",
+  "item.elegantdungeons.heat_hook": "Heat Hook",
+  "item.elegantdungeons.needle_blade": "Needle Blade",
+
+
+
 
   "item.elegantdungeons.lacumite_helmet": "Lacumite Helmet",
   "item.elegantdungeons.lacumite_chestplate": "Lacumite Chestplate",
@@ -50,6 +82,12 @@
   "item.elegantdungeons.myrkurite_leggings": "Myrkurite Leggings",
   "item.elegantdungeons.myrkurite_boots": "Myrkurite Boots",
 
+  "item.elegantdungeons.feyrune_helmet": "Feyrune Helmet",
+  "item.elegantdungeons.feyrune_chestplate": "Feyrune Chestplate",
+  "item.elegantdungeons.feyrune_leggings": "Feyrune Leggings",
+  "item.elegantdungeons.feyrune_boots": "Feyrune Boots",
+
+
   "item.elegantdungeons.ring_dieran": "Dieran Ring",
   "item.elegantdungeons.ring_fire_gem": "Fire Gem Ring",
   "item.elegantdungeons.ring_fossenium": "Fossenium Ring",
@@ -61,6 +99,7 @@
   "item.elegantdungeons.ring_myrkurite": "Myrkurite Ring",
   "item.elegantdungeons.ring_swamp": "Swamp Ring",
   "item.elegantdungeons.ring_base": "Base Ring",
+  "item.elegantdungeons.body_featherbooster": "Feather Booster",
   "item.elegantdungeons.amulet_base": "Base Amulet",
   "item.elegantdungeons.amulet_corrupt_flame": "Base Amulet",
   "item.elegantdungeons.amulet_goldchain": "Gold Chain Amulet",
@@ -141,8 +180,17 @@
   "item.elegantdungeons.lacumite_golem_egg": "Lacumite Golem Spawn Egg",
   "entity.elegantdungeons.rageroot": "Rageroot",
   "item.elegantdungeons.rageroot_egg": "Rageroot Spawn Egg",
+  "entity.elegantdungeons.duckin": "Duckin",
+  "item.elegantdungeons.duckin_egg": "Duckin Spawn Egg",
+  "entity.elegantdungeons.frog": "Frog",
+  "item.elegantdungeons.frog_egg": "Frog Spawn Egg",
+  "entity.elegantdungeons.imple": "Imple",
+  "item.elegantdungeons.imple_egg": "Imple Spawn Egg",
 
   "enchantment.elegantdungeons.curse_of_lopsidedness": "Curse of Lopsidedness",
+  "enchantment.elegantdungeons.curse_of_uncomfortability": "Curse of Uncomfortability",
   "enchantment.elegantdungeons.curse_of_denseness": "Curse of Denseness",
-  "enchantment.elegantdungeons.dune_strider": "Dune Strider"
+  "enchantment.elegantdungeons.dune_strider": "Dune Strider",
+  "enchantment.elegantdungeons.reverb": "Reverb",
+  "enchantment.elegantdungeons.heat_sigil": "Heat Sigil"
 }

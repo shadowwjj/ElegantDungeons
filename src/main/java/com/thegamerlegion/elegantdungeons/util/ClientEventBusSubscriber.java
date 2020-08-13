@@ -26,7 +26,9 @@ public class ClientEventBusSubscriber {
         RenderingRegistry.registerEntityRenderingHandler(RegistryHandler.SHROOM_BROWN_ENTITY.get(), ShroomBrownEntityRender::new);
         RenderingRegistry.registerEntityRenderingHandler(RegistryHandler.LACUMITE_GOLEM.get(), LacumiteGolemRender::new);
         RenderingRegistry.registerEntityRenderingHandler(RegistryHandler.RAGEROOT.get(), RagerootRender::new);
-        RenderingRegistry.registerEntityRenderingHandler(RegistryHandler.T1BALL.get(), MagicballRender::new);
+        RenderingRegistry.registerEntityRenderingHandler(RegistryHandler.DUCKIN.get(), DuckinRender::new);
+        RenderingRegistry.registerEntityRenderingHandler(RegistryHandler.FROG.get(), FrogRender::new);
+        RenderingRegistry.registerEntityRenderingHandler(RegistryHandler.IMPLE.get(), ImpleRender::new);
     }
 
     @SubscribeEvent(priority = EventPriority.LOWEST)

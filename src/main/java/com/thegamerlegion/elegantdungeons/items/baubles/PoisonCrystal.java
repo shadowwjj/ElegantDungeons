@@ -29,7 +29,7 @@ import static net.minecraft.potion.Effects.POISON;
 public class PoisonCrystal extends Item implements IBauble {
 
     public PoisonCrystal() {
-        super(new Item.Properties().group(ElegantDungeons.TAB));}
+        super(new Item.Properties().group(ElegantDungeons.TAB).maxStackSize(1));}
 
     @Override
     public BaubleType getBaubleType() {

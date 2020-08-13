@@ -18,8 +18,33 @@ public enum DungItemTiers implements IItemTier {
     DIERANSWORD(850, 0.0F, 4.0F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.T4_CRYSTAL_SHARD.get());}),
     MYRKURITESWORD(1650, 0.0F, 4.5F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.T5_CRYSTAL_SHARD.get());}),
     CHUNCHUNMARU(800, 0.0F, 2.5F, 0, 14, () -> { return Ingredient.fromItems(Items.IRON_INGOT);}),
-    CORNSWORD(800, 0.0F, 3.7F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());});
-
+    CORNSWORD(800, 0.0F, 3.7F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());}),
+    JADEBLADE(800, 0.0F, 3.5F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());}),
+    EBONYBLADE(800, 0.0F, 3.7F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());}),
+    CRESCENTCUTLASS(800, 0.0F, 3.7F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());}),
+    FLAMENCOSWORD(800, 0.0F, 3.7F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());}),
+    MORPHIUMROSEBLADE(800, 0.0F, 3.7F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());}),
+    SLAPSTICK(800, 0.0F, 0F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());}),
+    SKELETALSWORD(800, 0.0F, 0F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());}),
+    SACREDSWORD(800, 0.0F, 0F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());}),
+    GRASSBLADE(800, 0.0F, 0F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());}),
+    CRYSTALLINESWORD(800, 0.0F, 0F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());}),
+    FORTUNESWORD(800, 0.0F, 0F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());}),
+    ENDEROUSSWORD(800, 0.0F, 0F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());}),
+    FATESLAYER(800, 0.0F, 0F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());}),
+    DEMONICSWORD(800, 0.0F, 0F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());}),
+    BEASTBLADE(800, 0.0F, 0F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());}),
+    SCISSORSWORD(800, 0.0F, 0F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());}),
+    ROOTRIPPER(800, 0.0F, 0F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());}),
+    BUTTERSWORD(800, 0.0F, 0F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());}),
+    SEASLASHER(800, 0.0F, 0F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());}),
+    FEYBLADE(800, 0.0F, 0F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());}),
+    JESTERBESTER(800, 0.0F, 0F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());}),
+    VIBRANTRAPIER(800, 0.0F, 0F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());}),
+    SNAKEFANG(800, 0.0F, 0F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());}),
+    HEATHOOK(800, 0.0F, 0F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());}),
+    NEEDLEBLADE(800, 0.0F, 0F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());}),
+    ;
 
 
     private final int maxUses;

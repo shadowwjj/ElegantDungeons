@@ -30,5 +30,38 @@
     "category": "entity",
     "subtitle": "entity.golem.death",
     "sounds": [{"name": "elegantdungeons:entity/entity.golem.death", "stream":  "true"}]
+  },
+
+  "entity.duckin.ambient": {
+    "category": "entity",
+    "subtitle": "entity.duckin.ambient",
+    "sounds": [{
+      "name": "elegantdungeons:entity/entity.duckin.ambient", "stream": "true"},{"name": "elegantdungeons:entity/entity.duckin.ambient2", "stream": "true"},{"name": "elegantdungeons:entity/entity.duckin.ambient3", "stream": "true"}]
+  },
+
+  "entity.duckin.hurt": {
+    "category": "entity",
+    "subtitle": "entity.duckin.hurt",
+    "sounds": [{
+      "name": "elegantdungeons:entity/entity.duckin.hurt", "stream": "true"},{"name": "elegantdungeons:entity/entity.duckin.hurt2", "stream": "true"},{"name": "elegantdungeons:entity/entity.duckin.hurt3", "stream": "true"}]
+  },
+
+  "entity.duckin.death": {
+    "category": "entity",
+    "subtitle": "entity.duckin.death",
+    "sounds": [{"name": "elegantdungeons:entity/entity.duckin.death", "stream":  "true"}]
+  },
+
+  "entity.imple.hurt": {
+    "category": "entity",
+    "subtitle": "entity.imple.hurt",
+    "sounds": [{
+      "name": "elegantdungeons:entity/entity.imple.hurt", "stream": "true"},{"name": "elegantdungeons:entity/entity.imple.hurt2", "stream": "true"},{"name": "elegantdungeons:entity/entity.imple.hurt3", "stream": "true"}]
+  },
+
+  "entity.imple.death": {
+    "category": "entity",
+    "subtitle": "entity.imple.death",
+    "sounds": [{"name": "elegantdungeons:entity/entity.imple.death", "stream":  "true"}]
   }
 }

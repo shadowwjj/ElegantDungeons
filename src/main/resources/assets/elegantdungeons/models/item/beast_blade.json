@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "elegantdungeons:items/tools/swords/beast_blade"
+  }
+}
