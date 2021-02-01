@@ -26,12 +26,6 @@ public class CatEyeAmulet extends Item implements IBauble {
 
     @Override
     public void onWornTick(LivingEntity player) {
-        player.addPotionEffect(new EffectInstance(NIGHT_VISION, 10, 0, false, false));
-    }
-    @Override
-    public void onUnequipped(LivingEntity player) {
-        if(player.isPotionActive(NIGHT_VISION)){
-            player.removeActivePotionEffect(NIGHT_VISION);
-        }
+        player.addPotionEffect(new EffectInstance(NIGHT_VISION, 250, 0, false, false));
     }
 }

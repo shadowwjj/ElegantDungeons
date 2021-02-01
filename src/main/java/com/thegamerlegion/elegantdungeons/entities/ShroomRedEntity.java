@@ -37,6 +37,8 @@ public class ShroomRedEntity extends MonsterEntity {
         this.goalSelector.addGoal(4, new LeapAtTargetGoal(this, 0.75F));
         this.goalSelector.addGoal(5, new LookAtGoal(this, PlayerEntity.class, 10.0F));
         this.goalSelector.addGoal(6, new LookRandomlyGoal(this));
+        this.targetSelector.addGoal(1, new NearestAttackableTargetGoal<>(this, PlayerEntity.class, true));
+        this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
     }
 
     @Override

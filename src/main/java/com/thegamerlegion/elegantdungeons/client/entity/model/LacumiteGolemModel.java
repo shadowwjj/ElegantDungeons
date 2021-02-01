@@ -61,6 +61,8 @@ public class LacumiteGolemModel<T extends LacumiteGolem> extends EntityModel<T> 
         this.LeftLeg.rotateAngleX = MathHelper.cos(limbSwing * 0.5F) * 1.4F * limbSwingAmount;
         this.RightArm.rotateAngleX = MathHelper.cos(limbSwing * 0.5F + (float)Math.PI) * 0.9F * limbSwingAmount;
         this.RightLeg.rotateAngleX = MathHelper.cos(limbSwing * 0.5F + (float)Math.PI) * 1.4F * limbSwingAmount;
+        this.Head.rotateAngleX = headPitch * ((float)Math.PI / 180F);
+        this.Head.rotateAngleY = netHeadYaw * ((float)Math.PI / 180F);
     }
 
     public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {

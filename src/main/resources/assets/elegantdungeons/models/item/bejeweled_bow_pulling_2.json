@@ -1,0 +1,6 @@
+{
+  "parent": "item/bow",
+  "textures": {
+    "layer0": "elegantdungeons:items/tools/bows/bejeweled_bow_pulling_2"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " CC",
+    "CCC",
+    "RC "],
+  "key": {
+    "C": {
+  "item": "elegantdungeons:t5_crystal_refined"
+    },
+    "R": {
+      "item": "elegantdungeons:morphium_rod"
+    }
+  },
+  "result": {
+    "item": "elegantdungeons:myrkurite_sword"
+  }
+}

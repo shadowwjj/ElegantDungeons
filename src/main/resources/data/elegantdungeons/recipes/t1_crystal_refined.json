@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ISI",
+    "SSS",
+    "ISI"],
+  "key": {
+    "S": {
+  "item": "elegantdungeons:t1_crystal_shard"
+    },
+    "I": {
+      "tag": "forge:ingots/gold"
+    }
+  },
+  "result": {
+    "item": "elegantdungeons:t1_crystal_refined"
+  }
+}

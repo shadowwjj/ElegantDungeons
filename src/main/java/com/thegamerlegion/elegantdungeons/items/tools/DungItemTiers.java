@@ -12,7 +12,7 @@ public enum DungItemTiers implements IItemTier {
     BRICK_BREAKER(20, 60.0F, 2.0F, 4, 14, () -> { return Ingredient.fromItems(RegistryHandler.T5_CRYSTAL_SHARD.get());}),
 
 
-    LACUMITESWORD(500, 0.0F, 2.5F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.T1_CRYSTAL_SHARD.get());}),
+    LACUMITESWORD(500, 0.0F, 2.7F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.T1_CRYSTAL_SHARD.get());}),
     FOSSENIUMSWORD(650, 0.0F, 3.0F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.T2_CRYSTAL_SHARD.get());}),
     JAMANITESWORD(700, 0.0F, 3.5F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.T3_CRYSTAL_SHARD.get());}),
     DIERANSWORD(850, 0.0F, 4.0F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.T4_CRYSTAL_SHARD.get());}),
@@ -44,6 +44,8 @@ public enum DungItemTiers implements IItemTier {
     SNAKEFANG(800, 0.0F, 0F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());}),
     HEATHOOK(800, 0.0F, 0F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());}),
     NEEDLEBLADE(800, 0.0F, 0F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());}),
+
+    BASE_BOW(800, 0.0F, 0F, 0, 14, () -> { return Ingredient.fromItems(RegistryHandler.MORPHIUM_INGOT.get());})
     ;
 
 

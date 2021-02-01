@@ -44,4 +44,18 @@ public class ElegantDungeons {
             return new ItemStack(RegistryHandler.KEY_T5_BOSS.get());
         }
     };
+
+    public static final ItemGroup WEAPONS_TAB = new ItemGroup("elegantDungeonsWeapons") {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(RegistryHandler.MYRKURITE_SWORD.get());
+        }
+    };
+
+    public static final ItemGroup ARMOR_TAB = new ItemGroup("elegantDungeonsArmor") {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(RegistryHandler.MYRKURITE_HELMET.get());
+        }
+    };
 }

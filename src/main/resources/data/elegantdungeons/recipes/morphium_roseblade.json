@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " CC",
+    "CPC",
+    "RC "],
+  "key": {
+    "C": {
+  "item": "elegantdungeons:morphium_ingot"
+    },
+    "R": {
+      "item": "elegantdungeons:morphium_rod"
+    },
+    "P": {
+      "item": "elegantdungeons:rose_pearl"
+    }
+  },
+  "result": {
+    "item": "elegantdungeons:morphium_roseblade"
+  }
+}

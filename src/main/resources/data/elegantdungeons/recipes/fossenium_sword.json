@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " C ",
+    " C ",
+    " R "],
+  "key": {
+    "C": {
+  "item": "elegantdungeons:t2_crystal_refined"
+    },
+    "R": {
+      "item": "elegantdungeons:morphium_rod"
+    }
+  },
+  "result": {
+    "item": "elegantdungeons:fossenium_sword"
+  }
+}

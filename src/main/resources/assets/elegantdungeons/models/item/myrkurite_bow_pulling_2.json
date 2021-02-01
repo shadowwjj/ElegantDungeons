@@ -1,0 +1,6 @@
+{
+  "parent": "item/bow",
+  "textures": {
+    "layer0": "elegantdungeons:items/tools/bows/myrkurite_bow_pulling_2"
+  }
+}

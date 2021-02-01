@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "elegantdungeons:items/t1_crystal_refined"
+  }
+}

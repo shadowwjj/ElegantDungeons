@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ISI",
+    "SSS",
+    "ISI"],
+  "key": {
+    "S": {
+  "item": "elegantdungeons:t5_crystal_shard"
+    },
+    "I": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "item": "elegantdungeons:t5_crystal_refined"
+  }
+}

@@ -63,5 +63,52 @@
     "category": "entity",
     "subtitle": "entity.imple.death",
     "sounds": [{"name": "elegantdungeons:entity/entity.imple.death", "stream":  "true"}]
+  },
+
+  "entity.otamakin.ambient": {
+    "category": "entity",
+    "subtitle": "entity.otamakin.ambient",
+    "sounds": [{
+      "name": "elegantdungeons:entity/entity.otamakin.ambient", "stream": "true"},{"name": "elegantdungeons:entity/entity.otamakin.ambient2", "stream": "true"},{"name": "elegantdungeons:entity/entity.otamakin.ambient3", "stream": "true"},{"name": "elegantdungeons:entity/entity.otamakin.ambient4", "stream": "true"}]
+  },
+
+  "entity.otamakin.hurt": {
+    "category": "entity",
+    "subtitle": "entity.otamakin.hurt",
+    "sounds": [{
+      "name": "elegantdungeons:entity/entity.otamakin.hurt", "stream": "true"},{"name": "elegantdungeons:entity/entity.otamakin.hurt2", "stream": "true"},{"name": "elegantdungeons:entity/entity.otamakin.hurt3", "stream": "true"}]
+  },
+
+  "entity.otamakin.death": {
+    "category": "entity",
+    "subtitle": "entity.otamakin.death",
+    "sounds": [{"name": "elegantdungeons:entity/entity.otamakin.death", "stream":  "true"}]
+  },
+
+  "entity.byx.ambient": {
+    "category": "entity",
+    "subtitle": "entity.byx.ambient",
+    "sounds": [{
+      "name": "elegantdungeons:entity/entity.byx.ambient", "stream": "true"}]
+  },
+
+  "entity.byx.hurt": {
+    "category": "entity",
+    "subtitle": "entity.byx.hurt",
+    "sounds": [{
+      "name": "elegantdungeons:entity/entity.byx.hurt", "stream": "true"}]
+  },
+
+  "entity.byx.death": {
+    "category": "entity",
+    "subtitle": "entity.byx.death",
+    "sounds": [{"name": "elegantdungeons:entity/entity.byx.death", "stream":  "true"}]
+  },
+
+  "entity.voidwalker.death": {
+    "category": "entity",
+    "subtitle": "entity.voidwalker.death",
+    "sounds": [{
+      "name": "elegantdungeons:entity/entity.voidwalker.death", "stream": "true"}]
   }
 }

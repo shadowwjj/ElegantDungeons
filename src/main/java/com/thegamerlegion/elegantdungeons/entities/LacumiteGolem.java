@@ -26,9 +26,14 @@ public class LacumiteGolem extends MonsterEntity {
     @Override
     protected void registerGoals() {
         super.registerGoals();
-        this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.0, false));
-        this.goalSelector.addGoal(0, new NearestAttackableTargetGoal<PlayerEntity>(this, PlayerEntity.class, true, true));
+        this.goalSelector.addGoal(0, new MeleeAttackGoal(this, 1.5, false));
+        this.goalSelector.addGoal(1, new NearestAttackableTargetGoal<PlayerEntity>(this, PlayerEntity.class, true, true));
         this.goalSelector.addGoal(2, new SwimGoal(this));
+        this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 1.0f));
+        this.goalSelector.addGoal(4, new LookAtGoal(this, PlayerEntity.class, 10.0F));
+        this.goalSelector.addGoal(5, new LookRandomlyGoal(this));
+        this.targetSelector.addGoal(1, new NearestAttackableTargetGoal<>(this, PlayerEntity.class, true));
+        this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
     }
 
     @Override
@@ -36,9 +41,9 @@ public class LacumiteGolem extends MonsterEntity {
         super.registerAttributes();
         this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(15.00);
         this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(5.00);
-        this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.23D);
+        this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.27D);
         this.getAttribute(SharedMonsterAttributes.KNOCKBACK_RESISTANCE).setBaseValue(0.500);
-        this.getAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(15.0);
+        this.getAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(25.0);
     }
 
     @Override

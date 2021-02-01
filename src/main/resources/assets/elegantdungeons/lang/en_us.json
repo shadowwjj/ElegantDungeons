@@ -1,8 +1,11 @@
 {
+  "itemGroup.elegantDungeonsTab": "Elegant Dungeons",
+  "itemGroup.elegantDungeonsWeapons": "Elegant Dungeons Weapons",
+  "itemGroup.elegantDungeonsArmor": "Elegant Dungeons Armor",
+
   "item.elegantdungeons.key_diamond": "Diamond Key",
   "item.elegantdungeons.key_iron": "Iron Key",
   "item.elegantdungeons.key_gold": "Gold Key",
-  "item.elegantdungeons.morphium_ingot": "Morphium Ingot",
   "item.elegantdungeons.key_t1_boss": "Lacumite Boss Key",
   "item.elegantdungeons.key_t2_boss": "Fossenium Boss Key",
   "item.elegantdungeons.key_t3_boss": "Jamanite Boss Key",
@@ -15,11 +18,23 @@
   "item.elegantdungeons.t4_crystal_shard": "Dieran Crystal Shard",
   "item.elegantdungeons.t5_crystal_shard": "Myrkurite Crystal Shard",
 
+  "item.elegantdungeons.t1_crystal_refined": "Refined Lacumite Crystal",
+  "item.elegantdungeons.t2_crystal_refined": "Refined Fossenium Crystal",
+  "item.elegantdungeons.t3_crystal_refined": "Refined Jamanite Crystal",
+  "item.elegantdungeons.t4_crystal_refined": "Refined Dieran Crystal",
+  "item.elegantdungeons.t5_crystal_refined": "Refined Myrkurite Crystal",
+
+  "item.elegantdungeons.morphium_ingot": "Morphium Ingot",
+  "item.elegantdungeons.morphium_rod": "Morphium Rod",
+
   "item.elegantdungeons.mystic_branch": "Mystic Branch",
   "item.elegantdungeons.frog_biscuit": "Frog Biscuit",
   "item.elegantdungeons.rose_pearl": "Rose Pearl",
   "item.elegantdungeons.crystal_bubble": "Crystal Bubble",
   "item.elegantdungeons.relic_shard": "Relic Shard",
+  "item.elegantdungeons.newt_eye": "Newt Eye",
+  "item.elegantdungeons.tinfoil": "Tinfoil",
+  "item.elegantdungeons.sea_string": "Sea String",
 
   "item.elegantdungeons.lacumite_sword": "Lacumite Sword",
   "item.elegantdungeons.fossenium_sword": "Fossenium Sword",
@@ -54,6 +69,28 @@
   "item.elegantdungeons.heat_hook": "Heat Hook",
   "item.elegantdungeons.needle_blade": "Needle Blade",
 
+  "item.elegantdungeons.crystalline_bow": "Crystalline Bow",
+  "item.elegantdungeons.skeletal_bow": "Skeletal Bow",
+  "item.elegantdungeons.radiant_bow": "Radiant Bow",
+  "item.elegantdungeons.bejeweled_bow": "Bejeweled Bow",
+  "item.elegantdungeons.black_bow": "Black Bow",
+  "item.elegantdungeons.root_bow": "Root Bow",
+  "item.elegantdungeons.spectral_bow": "Spectral Bow",
+  "item.elegantdungeons.elven_bow": "Elven Bow",
+  "item.elegantdungeons.bullhorn_bow": "Bullhorn Bow",
+  "item.elegantdungeons.frostbite_bow": "Frostbite Bow",
+  "item.elegantdungeons.vampire_bow": "Vampire Bow",
+  "item.elegantdungeons.blowgun": "Blowgun",
+  "item.elegantdungeons.celebrinator": "Celebrinator",
+  "item.elegantdungeons.banana_bow": "Banana Bow",
+  "item.elegantdungeons.lacumite_bow": "Lacumite Bow",
+  "item.elegantdungeons.fossenium_bow": "Fossenium Bow",
+  "item.elegantdungeons.jamanite_bow": "Jamanite Bow",
+  "item.elegantdungeons.dieran_bow": "Dieran Bow",
+  "item.elegantdungeons.myrkurite_bow": "Myrkurite Bow",
+  "item.elegantdungeons.sunset_bow": "Sunset Bow",
+
+
 
 
 
@@ -86,6 +123,176 @@
   "item.elegantdungeons.feyrune_chestplate": "Feyrune Chestplate",
   "item.elegantdungeons.feyrune_leggings": "Feyrune Leggings",
   "item.elegantdungeons.feyrune_boots": "Feyrune Boots",
+
+  "item.elegantdungeons.guardian_helmet": "Guardian Helmet",
+  "item.elegantdungeons.guardian_chestplate": "Guardian Chestplate",
+  "item.elegantdungeons.guardian_leggings": "Guardian Leggings",
+  "item.elegantdungeons.guardian_boots": "Guardian Boots",
+
+  "item.elegantdungeons.elder_guardian_helmet": "Elder Guardian Helmet",
+  "item.elegantdungeons.elder_guardian_chestplate": "Elder Guardian Chestplate",
+  "item.elegantdungeons.elder_guardian_leggings": "Elder Guardian Leggings",
+  "item.elegantdungeons.elder_guardian_boots": "Elder Guardian Boots",
+
+  "item.elegantdungeons.dolphin_helmet": "Dolphin Helmet",
+  "item.elegantdungeons.dolphin_chestplate": "Dolphin Chestplate",
+  "item.elegantdungeons.dolphin_leggings": "Dolphin Leggings",
+  "item.elegantdungeons.dolphin_boots": "Dolphin Boots",
+
+  "item.elegantdungeons.magmatic_helmet": "Magmatic Helmet",
+  "item.elegantdungeons.magmatic_chestplate": "Magmatic Chestplate",
+  "item.elegantdungeons.magmatic_leggings": "Magmatic Leggings",
+  "item.elegantdungeons.magmatic_boots": "Magmatic Boots",
+
+  "item.elegantdungeons.tesla_helmet": "Tesla Helmet",
+  "item.elegantdungeons.tesla_chestplate": "Tesla Chestplate",
+  "item.elegantdungeons.tesla_leggings": "Tesla Leggings",
+  "item.elegantdungeons.tesla_boots": "Tesla Boots",
+
+  "item.elegantdungeons.miner_helmet": "Miner Helmet",
+  "item.elegantdungeons.miner_chestplate": "Miner Chestplate",
+  "item.elegantdungeons.miner_leggings": "Miner Leggings",
+  "item.elegantdungeons.miner_boots": "Miner Boots",
+
+  "item.elegantdungeons.steampunk_helmet": "Steampunk Helmet",
+  "item.elegantdungeons.steampunk_chestplate": "Steampunk Chestplate",
+  "item.elegantdungeons.steampunk_leggings": "Steampunk Leggings",
+  "item.elegantdungeons.steampunk_boots": "Steampunk Boots",
+
+  "item.elegantdungeons.duck_helmet": "Duck Helmet",
+  "item.elegantdungeons.duck_chestplate": "Duck Chestplate",
+  "item.elegantdungeons.duck_leggings": "Duck Leggings",
+  "item.elegantdungeons.duck_boots": "Duck Boots",
+
+  "item.elegantdungeons.moonwalker_helmet": "Moonwalker Helmet",
+  "item.elegantdungeons.moonwalker_chestplate": "Moonwalker Chestplate",
+  "item.elegantdungeons.moonwalker_leggings": "Moonwalker Leggings",
+  "item.elegantdungeons.moonwalker_boots": "Moonwalker Boots",
+
+  "item.elegantdungeons.demonic_helmet": "Demonic Helmet",
+  "item.elegantdungeons.demonic_chestplate": "Demonic Chestplate",
+  "item.elegantdungeons.demonic_leggings": "Demonic Leggings",
+  "item.elegantdungeons.demonic_boots": "Demonic Boots",
+
+  "item.elegantdungeons.knight_helmet": "Knight Helmet",
+  "item.elegantdungeons.knight_chestplate": "Knight Chestplate",
+  "item.elegantdungeons.knight_leggings": "Knight Leggings",
+  "item.elegantdungeons.knight_boots": "Knight Boots",
+
+  "item.elegantdungeons.samurai_helmet": "Samurai Helmet",
+  "item.elegantdungeons.samurai_chestplate": "Samurai Chestplate",
+  "item.elegantdungeons.samurai_leggings": "Samurai Leggings",
+  "item.elegantdungeons.samurai_boots": "Samurai Boots",
+
+  "item.elegantdungeons.rouge_helmet": "Rogue Helmet",
+  "item.elegantdungeons.rogue_chestplate": "Rogue Chestplate",
+  "item.elegantdungeons.rogue_leggings": "Rogue Leggings",
+  "item.elegantdungeons.rogue_boots": "Rogue Boots",
+
+  "item.elegantdungeons.firefly_helmet": "Firefly Helmet",
+  "item.elegantdungeons.firefly_chestplate": "Firefly Chestplate",
+  "item.elegantdungeons.firefly_leggings": "Firefly Leggings",
+  "item.elegantdungeons.firefly_boots": "Firefly Boots",
+
+  "item.elegantdungeons.rat_helmet": "Rat Helmet",
+  "item.elegantdungeons.rat_chestplate": "Rat Chestplate",
+  "item.elegantdungeons.rat_leggings": "Rat Leggings",
+  "item.elegantdungeons.rat_boots": "Rat Boots",
+
+  "item.elegantdungeons.skeletal_helmet": "Skeletal Helmet",
+  "item.elegantdungeons.skeletal_chestplate": "Skeletal Chestplate",
+  "item.elegantdungeons.skeletal_leggings": "Skeletal Leggings",
+  "item.elegantdungeons.skeletal_boots": "Skeletal Boots",
+
+  "item.elegantdungeons.polar_helmet": "Polar Helmet",
+  "item.elegantdungeons.polar_chestplate": "Polar Chestplate",
+  "item.elegantdungeons.polar_leggings": "Polar Leggings",
+  "item.elegantdungeons.polar_boots": "Polar Boots",
+
+  "item.elegantdungeons.mushroom_helmet": "Mushroom Helmet",
+  "item.elegantdungeons.mushroom_chestplate": "Mushroom Chestplate",
+  "item.elegantdungeons.mushroom_leggings": "Mushroom Leggings",
+  "item.elegantdungeons.mushroom_boots": "Mushroom Boots",
+
+  "item.elegantdungeons.invisible_helmet": "Invisible Helmet",
+  "item.elegantdungeons.invisible_chestplate": "Invisible Chestplate",
+  "item.elegantdungeons.invisible_leggings": "Invisible Leggings",
+  "item.elegantdungeons.invisible_boots": "Invisible Boots",
+
+  "item.elegantdungeons.pearl_helmet": "Pearl Helmet",
+  "item.elegantdungeons.pearl_chestplate": "Pearl Chestplate",
+  "item.elegantdungeons.pearl_leggings": "Pearl Leggings",
+  "item.elegantdungeons.pearl_boots": "Pearl Boots",
+
+  "item.elegantdungeons.creeper_helmet": "Creeper Helmet",
+  "item.elegantdungeons.creeper_chestplate": "Creeper Chestplate",
+  "item.elegantdungeons.creeper_leggings": "Creeper Leggings",
+  "item.elegantdungeons.creeper_boots": "Creeper Boots",
+
+  "item.elegantdungeons.rainbow_helmet": "Rainbow Helmet",
+  "item.elegantdungeons.rainbow_chestplate": "Rainbow Chestplate",
+  "item.elegantdungeons.rainbow_leggings": "Rainbow Leggings",
+  "item.elegantdungeons.rainbow_boots": "Rainbow Boots",
+
+  "item.elegantdungeons.sailor_helmet": "Sailor Helmet",
+  "item.elegantdungeons.sailor_chestplate": "Sailor Chestplate",
+  "item.elegantdungeons.sailor_leggings": "Sailor Leggings",
+  "item.elegantdungeons.sailor_boots": "Sailor Boots",
+
+  "item.elegantdungeons.crystalline_helmet": "Crystalline Helmet",
+  "item.elegantdungeons.crystalline_chestplate": "Crystalline Chestplate",
+  "item.elegantdungeons.crystalline_leggings": "Crystalline Leggings",
+  "item.elegantdungeons.crystalline_boots": "Crystalline Boots",
+
+  "item.elegantdungeons.meteorite_helmet": "Meteorite Helmet",
+  "item.elegantdungeons.meteorite_chestplate": "Meteorite Chestplate",
+  "item.elegantdungeons.meteorite_leggings": "Meteorite Leggings",
+  "item.elegantdungeons.meteorite_boots": "Meteorite Boots",
+
+  "item.elegantdungeons.amber_helmet": "Amber Helmet",
+  "item.elegantdungeons.amber_chestplate": "Amber Chestplate",
+  "item.elegantdungeons.amber_leggings": "Amber Leggings",
+  "item.elegantdungeons.amber_boots": "Amber Boots",
+
+  "item.elegantdungeons.scale_helmet": "Scale Helmet",
+  "item.elegantdungeons.scale_chestplate": "Scale Chestplate",
+  "item.elegantdungeons.scale_leggings": "Scale Leggings",
+  "item.elegantdungeons.scale_boots": "Scale Boots",
+
+  "item.elegantdungeons.swift_helmet": "Swift Helmet",
+  "item.elegantdungeons.swift_chestplate": "Swift Chestplate",
+  "item.elegantdungeons.swift_leggings": "Swift Leggings",
+  "item.elegantdungeons.swift_boots": "Swift Boots",
+
+  "item.elegantdungeons.pufferfish_helmet": "Pufferfish Helmet",
+  "item.elegantdungeons.pufferfish_chestplate": "Pufferfish Chestplate",
+  "item.elegantdungeons.pufferfish_leggings": "Pufferfish Leggings",
+  "item.elegantdungeons.pufferfish_boots": "Pufferfish Boots",
+
+  "item.elegantdungeons.overgrowth_helmet": "Overgrowth Helmet",
+  "item.elegantdungeons.overgrowth_chestplate": "Overgrowth Chestplate",
+  "item.elegantdungeons.overgrowth_leggings": "Overgrowth Leggings",
+  "item.elegantdungeons.overgrowth_boots": "Overgrowth Boots",
+
+  "item.elegantdungeons.wither_helmet": "Wither Helmet",
+  "item.elegantdungeons.wither_chestplate": "Wither Chestplate",
+  "item.elegantdungeons.wither_leggings": "Wither Leggings",
+  "item.elegantdungeons.wither_boots": "Wither Boots",
+
+  "item.elegantdungeons.cloud_helmet": "Cloud Helmet",
+  "item.elegantdungeons.cloud_chestplate": "Cloud Chestplate",
+  "item.elegantdungeons.cloud_leggings": "Cloud Leggings",
+  "item.elegantdungeons.cloud_boots": "Cloud Boots",
+
+  "item.elegantdungeons.ocelot_helmet": "Ocelot Helmet",
+  "item.elegantdungeons.ocelot_chestplate": "Ocelot Chestplate",
+  "item.elegantdungeons.ocelot_leggings": "Ocelot Leggings",
+  "item.elegantdungeons.ocelot_boots": "Ocelot Boots",
+
+  "item.elegantdungeons.clown_helmet": "Clown Helmet",
+  "item.elegantdungeons.clown_chestplate": "Clown Chestplate",
+  "item.elegantdungeons.clown_leggings": "Clown Leggings",
+  "item.elegantdungeons.clown_boots": "Clown Boots",
 
 
   "item.elegantdungeons.ring_dieran": "Dieran Ring",
@@ -170,7 +377,6 @@
   "block.elegantdungeons.poison_trail": "Poison Trail",
 
   "item.elegantdungeons.brick_breaker": "The Brick Breaker",
-  "itemGroup.elegantDungeonsTab": "Elegant Dungeons",
 
   "entity.elegantdungeons.shroom_red_entity": "Red Mushite",
   "item.elegantdungeons.shroom_red_egg": "Red Mushite Spawn Egg",
@@ -178,6 +384,8 @@
   "item.elegantdungeons.shroom_brown_egg": "Brown Mushite Spawn Egg",
   "entity.elegantdungeons.lacumite_golem": "Lacumite Golem",
   "item.elegantdungeons.lacumite_golem_egg": "Lacumite Golem Spawn Egg",
+  "entity.elegantdungeons.lacumite_seeker": "Lacumite Golem",
+  "item.elegantdungeons.lacumite_seeker_egg": "Lacumite Seeker Spawn Egg",
   "entity.elegantdungeons.rageroot": "Rageroot",
   "item.elegantdungeons.rageroot_egg": "Rageroot Spawn Egg",
   "entity.elegantdungeons.duckin": "Duckin",
@@ -186,6 +394,12 @@
   "item.elegantdungeons.frog_egg": "Frog Spawn Egg",
   "entity.elegantdungeons.imple": "Imple",
   "item.elegantdungeons.imple_egg": "Imple Spawn Egg",
+  "entity.elegantdungeons.living_experience": "Living Experience",
+  "item.elegantdungeons.living_experience_egg": "Living Experience Spawn Egg",
+  "entity.elegantdungeons.otamakin": "Otamakin",
+  "item.elegantdungeons.otamakin_egg": "Otamakin Spawn Egg",
+  "entity.elegantdungeons.byx": "Byx",
+  "item.elegantdungeons.byx_egg": "Byx Spawn Egg",
 
   "enchantment.elegantdungeons.curse_of_lopsidedness": "Curse of Lopsidedness",
   "enchantment.elegantdungeons.curse_of_uncomfortability": "Curse of Uncomfortability",

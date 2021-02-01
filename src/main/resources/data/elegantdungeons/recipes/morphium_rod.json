@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+  "item": "elegantdungeons:morphium_ingot"
+    }],
+  "result": {
+    "item": "elegantdungeons:morphium_rod",
+    "count": 2
+  }
+}
